@@ -1,0 +1,60 @@
+/*English font*/
+@font-face {
+    font-family: 'pixel_en';
+    src: url('Font_en.ttf')  format('truetype');
+}
+/*Farsi font*/
+@font-face {
+    font-family: 'pixel_fa';
+    src: url('Font_fa.ttf')  format('truetype');
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{height: 100vh;display: flex;justify-content: center;align-items: center;font-size: 16px; font-family: "pixel_en","pixel_fa","Consolas","math",sans-serif;background: #000;color: #fff; overflow: hidden !important;}
+a{text-decoration: none !important;}
+svg, img{
+    vertical-align: middle;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*404 text style*/
+.text_404{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 15px 0;
+}
+.text_404 h1{
+    margin: 0 10px;
+    font-size: 6rem;
+}
+/*Description style*/
+.description{
+    letter-spacing: 3px;
+    margin: 15px 0;
+    font-size: 1rem;
+}
+.back-link{
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 10px 0;
+    font-size: 0.8rem;
+}
+@media (max-width: 768px) {
+    .text_404 h1{
+        margin: 0 3px;
+        font-size: 4rem;
+    }
+    .description{
+        font-size: 0.8rem;
+    }
+    .back-link{
+        font-size: 0.6rem;
+    }
+    .Pixelated-image{
+        width: 120px;
+    }
+}
