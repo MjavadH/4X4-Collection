@@ -1,0 +1,119 @@
+*{box-sizing:border-box;margin:0;padding:0;}
+body{display: flex;justify-content: center;align-items: center;height: 100vh; font-size: 18px;font-family: "vazir",sans-serif;background: #171f37;color: rgba(255,255,255,0.8); overflow: hidden !important;}
+a{text-decoration: none;}
+svg{vertical-align: middle;}
+main{
+  width: 80%;
+  height: 60%;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+.Menubar{
+  width: 100%;
+  background-color: #313335;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1.2rem 1.2rem 0 0;
+  padding: .1rem .6rem;
+  user-select: none;
+  font-weight: 500;
+}
+.title_404{
+  font-weight: 800;
+}
+.Menu_BTN{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Menu_BTN a{
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 0 .2rem;
+}
+.Menu_BTN a:nth-child(3){
+  background-color: #fa615c;
+}
+.Menu_BTN a:nth-child(2){
+  background-color: #ffbd48;
+}
+.Menu_BTN a:nth-child(1){
+  background-color: #3fc950;
+}
+.Terminal_body{
+  background-color: #2B2B2B;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 1.2rem 1.2rem;
+  padding: 1.2rem;
+  font-family: "Anonymous Pro", monospace;
+  overflow-y: auto;
+}
+.Terminal_body::-webkit-scrollbar{
+  background-color: #2B2B2B;
+}
+.Terminal_body::-webkit-scrollbar-thumb{
+  background-color: #5C5C5C;
+}
+.arrow{
+  color: #ffc720;
+  margin: 0 0 0 .8rem;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+.keyboard {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.out_code{
+  margin: .5rem 0;
+}
+.red{
+  color: #fa615c;
+}
+.green{
+  color: #3fc950;
+}
+/*max style*/
+.max main{
+  width: 100%;
+  height: 100%;
+}
+.max .Menubar,.max .Terminal_body{
+  border-radius: 0;
+}
+
+/*min style*/
+.min_app{
+  visibility: hidden;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 0;
+  bottom: 0;
+  background: #3C3F41;
+  border-radius: 50%;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.min main{
+  transform: translate(-640px,260px) scale(0);
+}
+.min .min_app{
+  visibility: visible;
+}
+@media (max-width: 991px) {
+  .min main{
+    transform: translate(-200px,660px) scale(0);
+  }
+}
