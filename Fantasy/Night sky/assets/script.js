@@ -1,11 +1,5 @@
 // Move the background by changing the mouse position
 let container = document.getElementById('particles-js');
-window.onmousemove = function (e) {
-    let x = -e.x / 5,
-        y = -e.y / 5;
-    container.style.right = x + 'px';
-    container.style.bottom = y + 'px';
-}
 /*Particle script*/
 particlesJS('particles-js', {
     'particles': {
