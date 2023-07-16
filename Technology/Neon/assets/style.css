@@ -1,53 +1,77 @@
 /*Neon font */
 @font-face {
     font-family: 'neon';
-    src: url('Neoneon-3zaD6.otf')  format('opentype');
+    src: url('Neoneon-3zaD6.otf') format('opentype');
 }
-*{box-sizing:border-box;margin:0;padding:0;}
-body{height: 100vh;text-align: center;display: flex;flex-direction: column; justify-content: center;align-items: center; font-size: 16px;font-family: 'neon','SH AraHalaBoShe',cursive;background: #000;color: rgb(230,230,230); overflow: hidden !important;}
 
-.Text_404{
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'neon', 'SH AraHalaBoShe', cursive;
+    background: #000;
+    color: rgb(230, 230, 230);
+    overflow: hidden !important;
+}
+
+.Text_404 {
     margin: 0;
     padding: 0;
     color: #111;
     font-size: 16em;
     display: flex;
 }
-.Text_404 span{
+
+.Text_404 span {
     font-size: 10rem;
     margin: 0;
     padding: 0 1.6rem;
     animation: animate1 1s linear infinite;
 }
-.Text_404 span:nth-child(1){
+
+.Text_404 span:nth-child(1) {
     animation-delay: 0s;
 }
-.Text_404 span:nth-child(2){
+
+.Text_404 span:nth-child(2) {
     animation-delay: 0.25s;
 }
-.Text_404 span:nth-child(3){
+
+.Text_404 span:nth-child(3) {
     animation-delay: 0.5s;
 }
+
 @keyframes animate1 {
-    0%,100%{
+    0%, 100% {
         color: #fff;
         filter: blur(2px);
         text-shadow: 0 0 10px var(--color5),
-                    0 0 20px var(--color5),
-                    0 0 40px var(--color5),
-                    0 0 80px var(--color5),
-                    0 0 120px var(--color5),
-                    0 0 200px var(--color5),
-                    0 0 300px var(--color5),
-                    0 0 400px var(--color5);
+        0 0 20px var(--color5),
+        0 0 40px var(--color5),
+        0 0 80px var(--color5),
+        0 0 120px var(--color5),
+        0 0 200px var(--color5),
+        0 0 300px var(--color5),
+        0 0 400px var(--color5);
     }
-    5%,95%{
+    5%, 95% {
         color: #111;
         filter: blur(0);
         text-shadow: 0 0 10px transparent;
     }
 }
-.description{
+
+.description {
     padding: 0;
     color: #fff;
     text-shadow: 0 0 10px var(--color2),
@@ -61,6 +85,7 @@ body{height: 100vh;text-align: center;display: flex;flex-direction: column; just
     font-size: 3rem;
     margin: .375rem;
 }
+
 .btn {
     cursor: pointer;
     display: inline-block;
@@ -75,19 +100,22 @@ body{height: 100vh;text-align: center;display: flex;flex-direction: column; just
     text-decoration: underline var(--color2);
     transition: all .5s ease-in-out;
 }
+
 @media (max-width: 768px) {
     .Text_404 span {
         font-size: 5rem;
     }
-    .description{
+
+    .description {
         font-size: 1.5rem;
     }
-    .btn{
+
+    .btn {
         font-size: .8rem;
     }
 }
 
-:root{
+:root {
     --color1: #e43636;
     --color2: #5ae8e8;
     --color3: #37d334;
