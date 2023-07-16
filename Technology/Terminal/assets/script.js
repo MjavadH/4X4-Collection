@@ -37,17 +37,17 @@ const execute = function executeCommand(input) {
         output = `<p>The command entered is not correct</p>`;
     }
     //If user enter the word cls
-    else if (input === "cls"){
+    else if (input === "cls") {
         terminalOutput.innerHTML = "";
         return;
     }
     //If the user enters one of the words 'exit' and 'close'
-    else if (input === "close" || input === "exit"){
+    else if (input === "close" || input === "exit") {
         document.location.href = "../index.html" // The link that the user enters after sending the exit
         return;
     }
     //If the user enters the word report
-    else if (input === "report"){
+    else if (input === "report") {
         terminalOutput.innerHTML = `${
             terminalOutput.innerHTML
         }<p>${COMMANDS[input]}</p>`;
@@ -92,29 +92,27 @@ const backspace = function backSpaceKeyEvent(e) {
 };
 
 //When the user clicks on a control buttons
-const BTNS = function MenuBTN(t){
-    switch (t){
+const BTNS = function MenuBTN(t) {
+    switch (t) {
         case "max":
-            if (document.getElementById("body").className !== "max"){
+            if (document.getElementById("body").className !== "max") {
                 document.getElementById("body").className = "max";
-            }
-            else {
+            } else {
                 document.getElementById("body").className = "";
             }
             break;
         case "min":
-            if (document.getElementById("body").className === "max"){
+            if (document.getElementById("body").className === "max") {
                 document.getElementById("body").className = "max min";
-            }
-            else if (document.getElementById("body").className !== "max"){
+            } else if (document.getElementById("body").className !== "max") {
                 document.getElementById("body").className = "min";
             }
             break;
         case "re":
-            if (document.getElementById("body").className === "max min"){
+            if (document.getElementById("body").className === "max min") {
                 document.getElementById("body").className = "max";
             }
-            if (document.getElementById("body").className === "min"){
+            if (document.getElementById("body").className === "min") {
                 document.getElementById("body").className = "";
             }
             break;
