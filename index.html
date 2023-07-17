@@ -84,7 +84,7 @@
             margin: 0 7px;
         }
 
-        .page a:hover div .image {
+        .page a:hover div .lazy-image {
 
             transform: scale(1.2) rotateZ(-5deg);
         }
@@ -98,9 +98,24 @@
             padding: 1.2rem;
         }
 
-        .image {
+        .lazy-image {
+            height: 100%;
+            width: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
             border-radius: 1.25rem;
             padding: 0;
+            background-color: #000;
+        }
+
+        img.lazy-image {
+            opacity: 0.1;
+            will-change: opacity;
+            transition: all 0.3s;
+        }
+
+        img.lazy-image.loaded {
+            opacity: 1;
         }
 
         .attr_img {
@@ -138,8 +153,8 @@
         </div>
         <div data-aos="fade-up" class="col-lg-3 col-md-4 col-sm-6 col-12 mt-5 page">
             <a href="Technology/Matrix/index.html">
-                <div>
-                    <img src="Technology/Matrix/Image.png" alt="" class="img-fluid image">
+                <div class="image">
+                    <img class="lazy-image img-fluid" data-src="Technology/Matrix/Image.png" alt="Page 404 Matrix" src=""/>
                 </div>
                 <div class="p-3">
                     <h4>Matrix</h4>
@@ -148,8 +163,8 @@
         </div>
         <div data-aos="fade-up" class="col-lg-3 col-md-4 col-sm-6 col-12 mt-5 page">
             <a href="Technology/Glitch/index.html">
-                <div>
-                    <img src="Technology/Glitch/Image.png" alt="" class="img-fluid image">
+                <div class="image">
+                    <img class="lazy-image img-fluid" data-src="Technology/Glitch/Image.png" alt="Page 404 Glitch" src=""/>
                 </div>
                 <div class="p-3">
                     <h4>Glitch</h4>
@@ -158,8 +173,8 @@
         </div>
         <div data-aos="fade-up" class="col-lg-3 col-md-4 col-sm-6 col-12 mt-5 page">
             <a href="Technology/Terminal/index.html">
-                <div>
-                    <img src="Technology/Terminal/Image.png" alt="" class="img-fluid image">
+                <div class="image">
+                    <img class="lazy-image img-fluid" data-src="Technology/Terminal/Image.png" alt="Page 404 Terminal" src=""/>
                 </div>
                 <div class="p-3">
                     <h4>Terminal</h4>
@@ -168,8 +183,8 @@
         </div>
         <div data-aos="fade-up" class="col-lg-3 col-md-4 col-sm-6 col-12 mt-5 page">
             <a href="Technology/pixelated/index.html">
-                <div>
-                    <img src="Technology/pixelated/Image.png" alt="" class="img-fluid image">
+                <div class="image">
+                    <img class="lazy-image img-fluid" data-src="Technology/pixelated/Image.png" alt="Page 404 pixelated" src=""/>
                 </div>
                 <div class="p-3">
                     <h4>pixelated</h4>
@@ -178,8 +193,8 @@
         </div>
         <div data-aos="fade-up" class="col-lg-3 col-md-4 col-sm-6 col-12 mt-5 page">
             <a href="Technology/Neon/index.html">
-                <div>
-                    <img src="Technology/Neon/Image.png" alt="" class="img-fluid image">
+                <div class="image">
+                    <img class="lazy-image img-fluid" data-src="Technology/Neon/Image.png" alt="Page 404 Neon" src=""/>
                 </div>
                 <div class="p-3">
                     <h4>Neon</h4>
@@ -198,8 +213,8 @@
         </div>
         <div data-aos="fade-up" class="col-lg-3 col-md-4 col-sm-6 col-12 mt-5 page">
             <a href="Geometric/Abstract/index.html">
-                <div>
-                    <img src="Geometric/Abstract/Image.png" alt="" class="img-fluid image">
+                <div class="image">
+                    <img class="lazy-image img-fluid" data-src="Geometric/Abstract/Image.png" alt="Page 404 Abstract" src=""/>
                 </div>
                 <div class="p-3">
                     <h4>Abstract</h4>
@@ -208,8 +223,8 @@
         </div>
         <div data-aos="fade-up" class="col-lg-3 col-md-4 col-sm-6 col-12 mt-5 page">
             <a href="Geometric/Halo/index.html">
-                <div>
-                    <img src="Geometric/Halo/Image.png" alt="" class="img-fluid image">
+                <div class="image">
+                    <img class="lazy-image img-fluid" data-src="Geometric/Halo/Image.png" alt="Page 404 Halo" src=""/>
                 </div>
                 <div class="p-3">
                     <h4>Halo</h4>
@@ -228,8 +243,8 @@
         </div>
         <div data-aos="fade-up" class="col-lg-3 col-md-4 col-sm-6 col-12 mt-5 page">
             <a href="Fantasy/Night%20sky/index.html">
-                <div>
-                    <img src="Fantasy/Night%20sky/Image.png" alt="" class="img-fluid image">
+                <div class="image">
+                    <img class="lazy-image img-fluid" data-src="Fantasy/Night%20sky/Image.png" alt="Page 404 Night sky" src=""/>
                 </div>
                 <div class="p-3">
                     <h4>Night sky</h4>
@@ -238,8 +253,8 @@
         </div>
         <div data-aos="fade-up" class="col-lg-3 col-md-4 col-sm-6 col-12 mt-5 page">
             <a href="Fantasy/Wave/index.html">
-                <div>
-                    <img src="Fantasy/Wave/Image.png" alt="" class="img-fluid image">
+                <div class="image">
+                    <img class="lazy-image img-fluid" data-src="Fantasy/Wave/Image.png" alt="Page 404 Wave" src=""/>
                 </div>
                 <div class="p-3">
                     <h4>Wave</h4>
@@ -496,6 +511,25 @@
         },
         'retina_detect': true
     });
+
+    let lazyImages = [...document.querySelectorAll('.lazy-image')];
+    let inAdvance = 300;
+
+    function lazyLoad() {
+        lazyImages.forEach(image => {
+            if (image.offsetTop < window.innerHeight + window.scrollY + inAdvance) {
+                image.src = image.dataset.src;
+                image.onload = () => image.classList.add('loaded');
+            }
+        });
+
+    }
+
+    lazyLoad();
+
+    window.addEventListener('scroll', _.throttle(lazyLoad, 16));
+    window.addEventListener('resize', _.throttle(lazyLoad, 16));
+
 </script>
 </body>
 </html>
