@@ -12,7 +12,7 @@ body {
     align-items: center;
     font-size: 16px;
     font-family: "vazir", sans-serif;
-    background: #0E0F2D;
+    background: var(--P_color6);
     color: rgba(255, 255, 255, 0.8);
     overflow: hidden !important;
 }
@@ -32,7 +32,7 @@ a {
     font-size: 1.5rem;
 }
 
-.edge404 {
+.Square404 {
     position: relative;
     display: flex;
     justify-content: center;
@@ -40,7 +40,7 @@ a {
     width: 50%;
 }
 
-.edge {
+.Square {
     width: 20vw;
     height: 20vw;
     position: absolute;
@@ -58,9 +58,9 @@ a {
     z-index: 1;
 }
 
-.edge h1 {
+.Square h1 {
     font-size: 10vw;
-    color: var(--T_color);
+    color: var(--P_color6);
     transform: translateZ(90px);
     text-shadow: 0 0 2px rgba(0, 0, 0, .6);
     user-select: none;
@@ -107,15 +107,23 @@ a {
     --P_color4: #320C3B;
     --P_color5: #280C3D;
     --P_color6: #1E0D37;
-    --T_color: #1E0D37;
 }
 
 @media (max-width: 768px) {
     body {
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-evenly;
     }
-
+    .Square404{
+        width: 100%;
+    }
+    .Square{
+        width: 150px;
+        height: 150px;
+    }
+    .Square h1{
+        font-size: 70px;
+    }
     .texts {
         width: 100%;
     }
