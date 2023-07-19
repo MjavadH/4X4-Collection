@@ -13,7 +13,11 @@ A collection of simple 404 pages for use on websites
 ### Geometric
 - Abstract [preview](https://mjavadh.github.io/Collection-of-404-pages/Geometric/Abstract/index.html)
 - Halo [preview](https://mjavadh.github.io/Collection-of-404-pages/Geometric/Halo/index.html)
+- OopsBox [preview](https://mjavadh.github.io/Collection-of-404-pages/Geometric/OopsBox/index.html)
 
 ### Fantasy 
 - Night sky [preview](https://mjavadh.github.io/Collection-of-404-pages/Fantasy/Night%20sky/index.html)
 - Wave [preview](https://mjavadh.github.io/Collection-of-404-pages/Fantasy/Wave/index.html)
+
+### Minimal
+- See [preview](https://mjavadh.github.io/Collection-of-404-pages/Minimal/See/index.html)
