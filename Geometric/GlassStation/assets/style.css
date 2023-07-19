@@ -1,0 +1,161 @@
+@font-face {
+    font-family: 'IconFont';
+    src: url('Font/fa-light-300.eot'); /* IE9 Compat Modes */
+    src: url('Font/fa-light-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('Font/fa-light-300.woff2') format('woff2'), /* Super Modern Browsers */ url('Font/fa-light-300.woff') format('woff'), /* Pretty Modern Browsers */ url('Font/fa-light-300.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-family: "Vazirmatn", sans-serif;
+    background-color: #001833 !important;
+    color: rgba(255, 255, 255, 0.8);
+    overflow: hidden !important;
+}
+
+i {
+    font-family: IconFont, serif !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+.polygonS, .polygonC, .polygonX, .polygonV {
+    position: fixed !important;
+}
+
+.polygonX {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    transform: rotateZ(25deg);
+    width: 80px;
+    height: 80px;
+    border: none;
+    background: linear-gradient(25deg, #00ffed, #9d00c6);
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygonV {
+    content: '';
+    position: absolute;
+    right: 90px;
+    bottom: 80px;
+    transform: rotateZ(-25deg);
+    width: 120px;
+    height: 120px;
+    border: none;
+    background: linear-gradient(-25deg, #9d00c6, #00ffed);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.polygonS {
+    content: '';
+    position: absolute;
+    left: 120px;
+    bottom: 80px;
+    transform: rotateZ(15deg);
+    width: 100px;
+    height: 100px;
+    border: none;
+    background: linear-gradient(15deg, #0afb60, #1eadf0);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.polygonC {
+    content: '';
+    position: absolute;
+    right: 120px;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    border: none;
+    background: linear-gradient(#1eadf0, #0afb60);
+    clip-path: circle(50% at 50% 50%);
+}
+
+.card-main {
+    position: relative;
+    width: 80%;
+    height: 500px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #f0f0f0;
+    overflow-y: auto;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    z-index: 2;
+    user-select: none;
+}
+
+.error404 {
+    font-size: 9rem;
+    font-weight: 600;
+}
+
+.error404 i.fa-times {
+    color: #0072CE;
+}
+
+.content {
+    padding: 25px;
+}
+
+.content p {
+    font-size: 1.2rem;
+}
+
+.content p:nth-child(2) i {
+    color: #00A651;
+}
+
+.content p:nth-child(3) i {
+    color: #E60012;
+}
+
+.content p:nth-child(4) i {
+    color: #F39800;
+}
+
+.link {
+    text-align: center;
+    position: relative;
+    top: 40px;
+}
+
+@media (max-width: 768px) {
+    .polygonC, .polygonS {
+        visibility: hidden;
+    }
+
+    .card-main {
+        width: 90%;
+        height: 600px;
+    }
+
+    .error404 {
+        font-size: 90px;
+    }
+
+    .content p {
+        font-size: 0.8rem;
+    }
+}
+
