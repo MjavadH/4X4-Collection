@@ -14,6 +14,7 @@ A collection of simple 404 pages for use on websites
 - Abstract [preview](https://mjavadh.github.io/Collection-of-404-pages/Geometric/Abstract/index.html)
 - Halo [preview](https://mjavadh.github.io/Collection-of-404-pages/Geometric/Halo/index.html)
 - OopsBox [preview](https://mjavadh.github.io/Collection-of-404-pages/Geometric/OopsBox/index.html)
+- GlassStation [preview](https://mjavadh.github.io/Collection-of-404-pages/Geometric/GlassStation/index.html)
 
 ### Fantasy 
 - Night sky [preview](https://mjavadh.github.io/Collection-of-404-pages/Fantasy/Night%20sky/index.html)
