@@ -25,7 +25,7 @@ canvas {
 }
 
 .card {
-    background-color: rgba(10, 10, 10, 0.9);
+    background-color: rgba(10, 10, 10, 0.7);
     border: rgba(50, 50, 50, 0.2) 1px solid;
     position: absolute;
     border-radius: 1.2rem;
@@ -83,24 +83,17 @@ canvas {
     color: rgba(255, 255, 255, 0.8);
 }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
     .card {
-        height: 50%;
+        width: 85%;
     }
-}
-
-@media (max-width: 608px) {
-    .card {
-        height: 40%;
+    .title_404{
+        font-size: 100px;
     }
-}
-
-@media (max-width: 320px) {
-    .card {
-        height: 25%;
+    .text_404{
+        font-size: 16px;
     }
-
     #search_box {
-        padding: .4rem .3rem;
+        font-size: 12px;
     }
 }
