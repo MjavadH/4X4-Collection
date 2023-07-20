@@ -1,5 +1,6 @@
 # Collection of 404 pages
 A collection of simple 404 pages for use on websites
+[preview](https://mjavadh.github.io/Collection-of-404-pages/)
 
 ## Pages collection
 
@@ -19,6 +20,7 @@ A collection of simple 404 pages for use on websites
 ### Fantasy 
 - Night sky [preview](https://mjavadh.github.io/Collection-of-404-pages/Fantasy/Night%20sky/index.html)
 - Wave [preview](https://mjavadh.github.io/Collection-of-404-pages/Fantasy/Wave/index.html)
+- LostSpace [preview](https://mjavadh.github.io/Collection-of-404-pages/Fantasy/LostSpace/index.html)
 
 ### Minimal
 - See [preview](https://mjavadh.github.io/Collection-of-404-pages/Minimal/See/index.html)
