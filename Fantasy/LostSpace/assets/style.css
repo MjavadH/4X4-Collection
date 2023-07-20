@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Vazirmatn", sans-serif;
+    overflow: hidden !important;
+    background-color: #030315;
+    max-width: 100%;
+    height: 100vh;
+    color: #f8f9fa;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.text-404 h1 {
+    font-size: 6rem;
+    font-weight: bold;
+    padding: 5px;
+    margin: 5px;
+}
+
+.description {
+    font-size: 1.6rem;
+    transition: .7s;
+    padding: 2px;
+}
+
+.Astronaut {
+    width: 105px;
+    height: 200px;
+    background: url("Astronaut.png") no-repeat;
+    background-size: 100px;
+    z-index: 1;
+    right: 50px;
+    bottom: 2px;
+    transition: .5s ease-in;
+    animation: Astronaut 2s infinite;
+}
+
+.Astronaut2 {
+    width: 120px;
+    height: 100px;
+    background: url("Astronaut2.png") no-repeat;
+    background-size: 120px;
+    z-index: 1;
+    left: 50px;
+    top: 2px;
+    transition: .5s ease-in;
+    animation: Astronaut 2s infinite;
+    animation-delay: 1s;
+}
+
+.Earth {
+    width: 126px;
+    background: url("Earth.png") no-repeat;
+    background-size: 90%;
+    z-index: 1;
+    transition: .5s ease-in;
+    animation: Earth 500s infinite;
+}
+
+.star {
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+}
+
+.star i:nth-child(1) {
+    transform: translateX(90%) translateY(600px);
+    animation: star 5s infinite;
+    animation-delay: 1s;
+    opacity: 0;
+}
+
+.star i:nth-child(2) {
+    transform: translateX(70%) translateY(210px);
+    animation: star 5s infinite;
+    animation-delay: 2s;
+    opacity: 0;
+}
+
+.star i:nth-child(3) {
+    transform: translateX(79%) translateY(8px);
+    animation: star 5s infinite;
+    animation-delay: 3s;
+    opacity: 0;
+
+}
+
+.star i:nth-child(4) {
+    transform: translateX(10%) translateY(60px);
+    animation: star 5s infinite;
+    animation-delay: 4s;
+    opacity: 0;
+}
+
+.star i:nth-child(5) {
+    transform: translateX(10%) translateY(300px);
+    animation: star 5s infinite;
+    animation-delay: 5s;
+    opacity: 0;
+}
+
+.Meteorite {
+    width: 120px;
+    height: 100px;
+    background: url("Meteorite.png") no-repeat;
+    background-size: 120px;
+    z-index: 0;
+    left: 0;
+    top: 0;
+    transition: .5s ease-in;
+    animation: Meteorite 10s infinite;
+    transform: translate(-100%, -100%);
+    animation-delay: 4s;
+}
+
+.rocket {
+    width: 100px;
+    height: 200px;
+    background: url("rocket.png") no-repeat;
+    background-size: 100px;
+    z-index: 3;
+    transform: translateY(450%);
+    transition: .5s ease-in;
+}
+
+.rocket.launch {
+    animation: rocket 2s ease-out;
+}
+
+/* Animations */
+
+/* Rocket animation */
+@keyframes rocket {
+    100% {
+        transform: translateY(-550%);
+    }
+}
+
+/* Meteor animation */
+@keyframes Meteorite {
+    100% {
+        transform: translateY(900%) translateX(1500%);
+        opacity: 0;
+    }
+}
+
+/* Animation of stars */
+
+@keyframes star {
+    50% {
+        color: #d5d51c;
+        opacity: 1;
+
+    }
+}
+
+/* Earth animation */
+@keyframes Earth {
+    50% {
+        transform: rotateZ(1800deg);
+    }
+}
+
+/* Animation of astronauts */
+@keyframes Astronaut {
+    50% {
+        transform: translateY(5px);
+    }
+}
