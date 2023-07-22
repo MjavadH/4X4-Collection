@@ -84,6 +84,29 @@ a {
     border-color: #f8f9fa;
 }
 
+@media (max-width: 768px) {
+    .Circle {
+        width: 350px;
+        height: 350px;
+    }
+
+    .Circle h1 {
+        font-size: 120px;
+    }
+
+    .Circle h2 {
+        font-size: 16px;
+    }
+
+    .Circle p {
+        display: none;
+    }
+
+    .btn {
+        font-size: 10px;
+    }
+}
+
 :root {
     --red_color1: #de1d1d;
     --red_color2: #c31a1a;
