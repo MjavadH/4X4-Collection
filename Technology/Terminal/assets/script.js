@@ -40,7 +40,7 @@ const execute = function executeCommand(input) {
     }
     //If the user enters one of the words 'exit' and 'close'
     else if (input === "close" || input === "exit") {
-        document.location.href = "../index.html" // The link that the user enters after sending the exit
+        document.location.href = "../../index.html" // The link that the user enters after sending the exit
         return;
     }
     //If the user enters the word report
@@ -68,7 +68,14 @@ const key = function keyEvent(e) {
     if (BLACKLISTED_KEY_CODES.includes(e.keyCode)) {
         return;
     }
-
+    //if user click backspace
+    if (e.keyCode === 8) {
+        userInput.innerHTML = userInput.innerHTML.slice(
+            0,
+            userInput.innerHTML.length - 1
+        );
+        return;
+    }
     if (e.key === "Enter") {
         execute(input);
         userInput.innerHTML = "";
@@ -76,16 +83,6 @@ const key = function keyEvent(e) {
     }
 
     userInput.innerHTML = input + e.key;
-};
-//if user click backspace
-const backspace = function backSpaceKeyEvent(e) {
-    if (e.keyCode !== 8 && e.keyCode !== 46) {
-        return;
-    }
-    userInput.innerHTML = userInput.innerHTML.slice(
-        0,
-        userInput.innerHTML.length - 1
-    );
 };
 
 //When the user clicks on a control buttons
@@ -115,6 +112,5 @@ const BTNS = function MenuBTN(t) {
             break;
     }
 };
-document.addEventListener("keydown", backspace);
-document.addEventListener("keypress", key);
+document.addEventListener("keydown", key);
 document.addEventListener("DOMContentLoaded", app);
