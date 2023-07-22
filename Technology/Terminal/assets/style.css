@@ -119,7 +119,25 @@ main {
 .green {
     color: #3fc950;
 }
-
+#userInput::after{
+    content: '';
+    width: 5px;
+    height: 15px;
+    position: relative;
+    display: inline-block;
+    background: white;
+    -webkit-animation: cursor 1s linear infinite;
+    -o-animation: cursor 1s linear infinite;
+    animation: cursor 1s linear infinite;
+}
+@keyframes cursor {
+    0%,100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
 /*max style*/
 .max main {
     width: 100%;
