@@ -58,7 +58,7 @@ const execute = function executeCommand(input) {
 
     terminalOutput.innerHTML = `${
         terminalOutput.innerHTML
-    }<p>${output}</p>`;
+    }<p class="out_code">${output}</p>`;
     Terminal.scrollTop = terminalOutput.scrollHeight;
 };
 //when user click any key

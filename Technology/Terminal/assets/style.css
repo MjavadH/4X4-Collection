@@ -168,6 +168,13 @@ main {
 }
 
 @media (max-width: 991px) {
+    main{
+        width: 95%;
+        height: 70%;
+    }
+    .out_code{
+        margin: .2rem 0;
+    }
     .min main {
         transform: translate(-200px, 660px) scale(0);
     }
