@@ -7,7 +7,7 @@ const COMMANDS = {
         "",
     "report":
         "<span class='green'>This page report has been successfully sent to support.</span>",
-    "command":
+    "commands":
         "List of commands: <span class=\"red\"> help</span> , <span class=\"red\"> report</span> ,<span class=\"red\"> exit</span>\n",
     "cls":
         ""
