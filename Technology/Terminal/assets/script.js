@@ -16,13 +16,10 @@ const COMMANDS = {
 let userInput
 let terminalOutput
 let Terminal
-let Keyboard
 const app = () => {
     userInput = document.getElementById("userInput");
     terminalOutput = document.getElementById("code");
     Terminal = document.getElementById("Terminal");
-    Keyboard = document.getElementById("Keyboard");
-    Keyboard.focus();
 };
 
 //When the user hits the enter button
@@ -67,7 +64,7 @@ const execute = function executeCommand(input) {
 //when user click any key
 const key = function keyEvent(e) {
     const input = userInput.innerHTML;
-    Keyboard.focus()
+
     if (BLACKLISTED_KEY_CODES.includes(e.keyCode)) {
         return;
     }
