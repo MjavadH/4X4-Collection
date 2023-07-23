@@ -103,6 +103,11 @@ main {
     font-size: 1.4rem;
 }
 
+.keyboard {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
 .out_code {
     margin: .5rem 0;
 }
