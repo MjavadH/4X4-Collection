@@ -1,4 +1,3 @@
-const BLACKLISTED_KEY_CODES = [38,40,37,39,18,20,17,16,9,27,144];
 //List of commands
 const COMMANDS = {
     "help":
@@ -25,7 +24,7 @@ const app = () => {
     Keyboard.focus();
 };
 
-//When the user hits the enter button
+//When the user click the 'Enter' key
 const execute = function executeCommand(input) {
     let output;
 
@@ -65,32 +64,34 @@ const execute = function executeCommand(input) {
     Terminal.scrollTop = terminalOutput.scrollHeight;
 };
 //when user click any key
-const key = function keyEvent(e) {
-    const input = userInput.innerHTML;
-    Keyboard.focus()
-    if (BLACKLISTED_KEY_CODES.includes(e.keyCode)) {
-
+let str = '';
+document.addEventListener('keypress', function(event) {
+    const currentCode = event.which || event.code;
+    let currentKey = event.key;
+    if (!currentKey) {
+        currentKey = String.fromCharCode(currentCode);
     }
-    else if (e.key === "Enter") {
-        execute(input);
+    if (event.key === "Enter") {
+        execute(userInput.innerHTML);
         userInput.innerHTML = "";
+        str = '';
     }
     else{
-        const currentCode = e.which || e.code;
-        let currentKey = e.key;
-        if (!currentKey) {
-            currentKey = String.fromCharCode(currentCode);
-        }
-        e.preventDefault();
-        userInput.innerHTML = input + currentKey;
+        str += currentKey;
+        event.preventDefault();
+        userInput.innerHTML = str;
     }
-};
+})
 const backSpace = function backSpace(e){
     //if user click backspace
     if (e.keyCode === 8) {
         userInput.innerHTML = userInput.innerHTML.slice(
             0,
             userInput.innerHTML.length - 1
+        );
+        str = str.slice(
+            0,
+            str.length - 1
         );
     }
 }
@@ -121,6 +122,5 @@ const BTNS = function MenuBTN(t) {
             break;
     }
 };
-document.addEventListener("keypress", key);
 document.addEventListener("keydown", backSpace);
 document.addEventListener("DOMContentLoaded", app);
