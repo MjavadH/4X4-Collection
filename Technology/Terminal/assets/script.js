@@ -71,14 +71,6 @@ const key = function keyEvent(e) {
     if (BLACKLISTED_KEY_CODES.includes(e.keyCode)) {
 
     }
-    //if user click backspace
-    else if (e.keyCode === 8) {
-        userInput.innerHTML = userInput.innerHTML.slice(
-            0,
-            userInput.innerHTML.length - 1
-        );
-
-    }
     else if (e.key === "Enter") {
         execute(input);
         userInput.innerHTML = "";
@@ -93,7 +85,15 @@ const key = function keyEvent(e) {
         userInput.innerHTML = input + currentKey;
     }
 };
-
+const backSpace = function backSpace(e){
+    //if user click backspace
+    if (e.keyCode === 8) {
+        userInput.innerHTML = userInput.innerHTML.slice(
+            0,
+            userInput.innerHTML.length - 1
+        );
+    }
+}
 //When the user clicks on a control buttons
 const BTNS = function MenuBTN(t) {
     switch (t) {
@@ -121,5 +121,6 @@ const BTNS = function MenuBTN(t) {
             break;
     }
 };
-document.addEventListener("keydown", key);
+document.addEventListener("keypress", key);
+document.addEventListener("keydown", backSpace);
 document.addEventListener("DOMContentLoaded", app);
