@@ -69,23 +69,29 @@ const key = function keyEvent(e) {
     const input = userInput.innerHTML;
     Keyboard.focus()
     if (BLACKLISTED_KEY_CODES.includes(e.keyCode)) {
-        return;
+
     }
     //if user click backspace
-    if (e.keyCode === 8) {
+    else if (e.keyCode === 8) {
         userInput.innerHTML = userInput.innerHTML.slice(
             0,
             userInput.innerHTML.length - 1
         );
-        return;
+
     }
-    if (e.key === "Enter") {
+    else if (e.key === "Enter") {
         execute(input);
         userInput.innerHTML = "";
-        return;
     }
-
-    userInput.innerHTML = input + e.key;
+    else{
+        const currentCode = e.which || e.code;
+        let currentKey = e.key;
+        if (!currentKey) {
+            currentKey = String.fromCharCode(currentCode);
+        }
+        e.preventDefault();
+        userInput.innerHTML = input + currentKey;
+    }
 };
 
 //When the user clicks on a control buttons
