@@ -1,3 +1,4 @@
+const BLACKLISTED_KEY_CODES = [38,40,37,39,18,20,17,16,9,27,144];
 //List of commands
 const COMMANDS = {
     "help":
@@ -22,6 +23,13 @@ const app = () => {
     Terminal = document.getElementById("Terminal");
     Keyboard = document.getElementById("Keyboard");
     Keyboard.focus();
+    if (screen.width < 991){
+        Keyboard.addEventListener("keyup", key);
+    }
+    else{
+        document.addEventListener('keypress', key);
+    }
+    document.addEventListener("keydown", backSpace);
 };
 
 //When the user click the 'Enter' key
@@ -63,25 +71,36 @@ const execute = function executeCommand(input) {
     }<p class="out_code">${output}</p>`;
     Terminal.scrollTop = terminalOutput.scrollHeight;
 };
-//when user click any key
 let str = '';
-document.addEventListener('keypress', function(event) {
-    const currentCode = event.which || event.code;
+//when user click any key
+const key = function keyEvent(event) {
     let currentKey = event.key;
-    if (!currentKey) {
-        currentKey = String.fromCharCode(currentCode);
+    Keyboard.focus();
+    Keyboard.innerHTML = event.target.value;
+    if (BLACKLISTED_KEY_CODES.includes(event.keyCode)) {
+        return
+    }
+    if (!currentKey || currentKey === "Unidentified" || screen.width < 991) {
+        currentKey = event.target.value;
     }
     if (event.key === "Enter") {
         execute(userInput.innerHTML);
         userInput.innerHTML = "";
+        currentKey = "";
+        event.target.value = "";
         str = '';
     }
     else{
-        str += currentKey;
+        if(screen.width < 991){
+            str = currentKey;
+        }else{
+            str += currentKey;
+        }
         event.preventDefault();
         userInput.innerHTML = str;
     }
-})
+}
+//when user click 'BackSpace' key
 const backSpace = function backSpace(e){
     //if user click backspace
     if (e.keyCode === 8) {
@@ -122,5 +141,5 @@ const BTNS = function MenuBTN(t) {
             break;
     }
 };
-document.addEventListener("keydown", backSpace);
+
 document.addEventListener("DOMContentLoaded", app);

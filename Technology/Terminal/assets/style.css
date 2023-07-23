@@ -180,6 +180,12 @@ main {
     .out_code{
         margin: .2rem 0;
     }
+    .keyboard{
+        position: absolute;
+        width: 100%;
+        left: 0;
+        height: 50px;
+    }
     .min main {
         transform: translate(-200px, 660px) scale(0);
     }
