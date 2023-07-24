@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Page 404 CMD</title>
+    <!-- Style -->
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body id="Body">
+<p dir="ltr" class="type"></p>
+
+<!-- Content to be typed -->
+<div id="user-type" class="d-none user-type">
+    <span>Microsoft Windows [Version 10.0.18363.1256]</span>
+    <p>(c) 2019 Microsoft Corporation. All rights reserved.</p>
+    <br>
+    <p class="run">
+        <span>yourWebsite:\ErrorPage\404></span>
+        <span class="text-success">404page.html</span>
+        <span class="type-cursor"></span>
+    </p>
+    <div class="text-Error">
+        <h1>Not Found Error 404</h1>
+        <!--buttons-->
+        <a href="#" class="btn">Back</a>
+        <a href="#" class="btn">Back to Home</a>
+    </div>
+</div>
+<!-- Script -->
+<script src="assets/typed.js"></script>
+<script type="text/javascript">
+    let typed = new Typed(".type", {
+        strings: [
+            document.getElementById("user-type").innerHTML,
+        ],
+        typeSpeed: 10,
+        loop: false
+    });
+</script>
+</body>
+</html>
