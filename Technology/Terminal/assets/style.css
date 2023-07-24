@@ -181,9 +181,10 @@ main {
         margin: .2rem 0;
     }
     .keyboard{
-        position: absolute;
+        position: relative;
         width: 100%;
         left: 0;
+        top: -35px;
         height: 50px;
     }
     .min main {
