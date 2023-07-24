@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    font-size: 16px;
+    direction: ltr;
+    background-color: #300a24;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+::-moz-selection {
+    background: rgb(236, 228, 206);
+    color: rgb(27, 30, 33);
+}
+
+::selection {
+    background: rgb(236, 228, 206);
+    color: rgb(27, 30, 33);
+}
+
+a {
+    text-decoration: none
+}
+
+/* Text style */
+.typed-cursor {
+    display: none;
+}
+
+.text-success {
+    color: #28a745 !important;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.text-light {
+    color: #f8f9fa !important;
+}
+
+.text-info {
+    color: #17a2b8 !important;
+}
+
+.type span {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.text-success::-moz-selection {
+    background-color: lime;
+    color: #1b1e21;
+}
+
+.text-success::selection {
+    background-color: lime;
+    color: #1b1e21;
+}
+
+.text-info::-moz-selection {
+    background-color: #17a2b8;
+    color: #1b1e21;
+}
+
+.text-info::selection {
+    background-color: #17a2b8;
+    color: #1b1e21;
+}
+
+.Error {
+    position: absolute;
+    color: #d6d8db;
+    font-size: 3rem;
+    text-align: center;
+    width: 100%;
+    font-weight: 800;
+    top: 50%;
+
+}
+
+/*Button style*/
+.btn:hover {
+    color: #212529;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: #f8f9fa 1px solid;
+    padding: .375rem .75rem;
+    margin: .375rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    color: #f8f9fa;
+    transition: all .5s ease-in-out;
+}
+
+/* 404 animation */
+.T404 {
+    animation: 10s T4 linear infinite;
+    -moz-animation: 10s T4 linear infinite;
+    -o-animation: 10s T4 linear infinite;
+    -webkit-animation: 10s T4 linear infinite;
+}
+
+@keyframes T4 {
+    0%, 100% {
+        color: lime;
+    }
+    15% {
+        color: #ff417e;
+    }
+    25% {
+        color: #daa626;
+    }
+    35% {
+        color: #17a2b8;
+    }
+    45% {
+        color: red;
+    }
+    55% {
+        color: #4bfff7;
+    }
+    65% {
+        color: #fff975;
+    }
+    75% {
+        color: #ff900d;
+    }
+    85% {
+        color: #0031ff;
+    }
+    95% {
+        color: #f9fff6;
+    }
+}

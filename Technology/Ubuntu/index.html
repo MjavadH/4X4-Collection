@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Page 404 Ubuntu</title>
+    <!-- Style -->
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="main">
+    <p class="type"></p>
+    <!-- Content to be typed -->
+    <div id="typee" class="typee d-none">
+        <span class="text-success">MjavadH@Github</span>
+        <span class="text-light">:</span>
+        <span class="text-info">~</span>
+        <span class="text-light">$</span>
+    </div>
+    <p class="Error"></p>
+    <div id="type-Error" class="type-Error d-none">
+        <span>Not Found Error</span>
+        <span class="T404">
+            <span>4</span>
+            <span>0</span>
+            <span>4</span>
+        </span>
+        <br><a href="#" class="btn btn-outline-light">Back to Home</a>
+    </div>
+</div>
+<!-- Script -->
+<script src="assets/typed.js"></script>
+<script type="text/javascript">
+    let typed = new Typed(".type", {
+        strings: [
+            document.getElementById("typee").innerHTML,
+        ],
+        typeSpeed: 50,
+        loop: false
+    });
+    let typed1 = new Typed(".Error", {
+        strings: [
+            document.getElementById("type-Error").innerHTML,
+        ],
+        typeSpeed: 20,
+        loop: false
+    });
+</script>
+</body>
+</html>
