@@ -22,20 +22,27 @@ body {
     background: #000;
     color: rgb(230, 230, 230);
     overflow: hidden !important;
+    -webkit-animation: Random_Color 5s linear infinite;
+    -o-animation: Random_Color 5s linear infinite;
+    animation: Random_Color 5s linear infinite;
 }
-
+@keyframes Random_Color {
+    0%,100%{
+        filter: hue-rotate(0deg);
+    }
+    50%{
+        filter: hue-rotate(300deg);
+    }
+}
 .Text_404 {
-    margin: 0;
     padding: 0;
-    color: #111;
-    font-size: 16em;
     display: flex;
+    margin: 1.725rem 0;
 }
 
 .Text_404 span {
-    font-size: 10rem;
-    margin: 0;
-    padding: 0 1.6rem;
+    font-size: 6em;
+    padding: 0 1.725rem;
     animation: animate1 1s linear infinite;
 }
 
@@ -72,7 +79,6 @@ body {
 }
 
 .description {
-    padding: 0;
     color: #fff;
     text-shadow: 0 0 10px var(--color2),
     0 0 20px var(--color2),
@@ -82,8 +88,8 @@ body {
     0 0 200px var(--color2),
     0 0 300px var(--color2),
     0 0 400px var(--color2);
-    font-size: 3rem;
-    margin: .375rem;
+    font-size: 3em;
+    margin: 1.725rem 0;
 }
 
 .btn {
@@ -95,23 +101,23 @@ body {
     vertical-align: middle;
     padding: .375rem .75rem;
     margin: .375rem;
-    font-size: 1.6rem;
-    color: var(--color2);
-    text-decoration: underline var(--color2);
+    font-size: 2.252em;
+    color: var(--color3);
     transition: all .5s ease-in-out;
+    text-decoration: none;
 }
 
 @media (max-width: 768px) {
     .Text_404 span {
-        font-size: 5rem;
+        font-size: 3em;
     }
 
     .description {
-        font-size: 1.5rem;
+        font-size: 1.5em;
     }
 
     .btn {
-        font-size: .8rem;
+        font-size: 1.252em;
     }
 }
 
