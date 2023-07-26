@@ -12,7 +12,8 @@ A collection of simple 404 pages for use on websites
 - Neon [preview](https://mjavadh.github.io/Collection-of-404-pages/Technology/Neon/index.html)
 - CMD [preview](https://mjavadh.github.io/Collection-of-404-pages/Technology/CMD/index.html)
 - Ubuntu [preview](https://mjavadh.github.io/Collection-of-404-pages/Technology/Ubuntu/index.html)
-  
+- PowerShell [preview](https://mjavadh.github.io/Collection-of-404-pages/Technology/PowerShell/index.html)
+    
 ### Geometric
 - Abstract [preview](https://mjavadh.github.io/Collection-of-404-pages/Geometric/Abstract/index.html)
 - Halo [preview](https://mjavadh.github.io/Collection-of-404-pages/Geometric/Halo/index.html)
