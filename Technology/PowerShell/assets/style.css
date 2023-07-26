@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    font-size: 16px;
+    direction: ltr;
+    background: rgb(1, 36, 86) !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+::-moz-selection {
+    background: rgb(255, 230, 149);
+    color: rgb(27, 30, 33);
+}
+
+::selection {
+    background: rgb(255, 230, 149);
+    color: rgb(27, 30, 33);
+}
+
+a {
+    text-decoration: none
+}
+
+/* Text style */
+.text-info {
+    color: #17a2b8 !important;
+}
+
+.text-warning {
+    color: #ffc107 !important;
+}
+
+.typed-cursor {
+    display: none;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.type {
+    font-size: 1rem;
+    font-weight: 800;
+    color: #d6d8db;
+    font-family: "raster Fonts", "sans-serif";
+}
+
+.text-Error h1 {
+    background-color: #000;
+    color: red;
+}
+
+.text-Error {
+    position: absolute;
+    display: block;
+    padding: 6px;
+    text-align: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*Button style*/
+.btn:hover {
+    color: #212529;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: #f8f9fa 1px solid;
+    padding: .375rem .75rem;
+    margin: .375rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    color: #f8f9fa;
+    transition: all .5s ease-in-out;
+}
+
+/*Text style when selected*/
+.text-warning::-moz-selection {
+    background: rgb(255, 230, 149);
+    color: rgb(0, 104, 210) !important;
+}
+
+.text-warning::selection {
+    background: rgb(255, 230, 149);
+    color: rgb(0, 104, 210) !important;
+}
+
+.text-info::-moz-selection {
+    background: rgb(255, 230, 149);
+    color: rgb(255, 94, 145) !important;
+}
+
+.text-info::selection {
+    background: rgb(255, 230, 149);
+    color: rgb(255, 94, 145) !important;
+}
+
+.text-Error h1::-moz-selection {
+    background: rgb(255, 255, 255);
+    color: rgb(14, 241, 241) !important;
+}
+
+.text-Error h1::selection {
+    background: rgb(255, 255, 255);
+    color: rgb(14, 241, 241) !important;
+}
