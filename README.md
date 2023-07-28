@@ -2,6 +2,13 @@
 A collection of simple 404 pages for use on websites
 [preview](https://mjavadh.github.io/Collection-of-404-pages/)
 
+## Categories
+
+- [Technology](#Technolog)
+- [Geometric](#Geometric)
+- [Fantasy](#Fantasy)
+- [Minimal](#Minimal)
+
 ## Pages collection
 
 ### Technology 
