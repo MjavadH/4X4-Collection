@@ -4,10 +4,10 @@ A collection of simple 404 pages for use on websites
 
 ## Categories
 
-- [Technology](#Technolog)
-- [Geometric](#Geometric)
-- [Fantasy](#Fantasy)
-- [Minimal](#Minimal)
+- [Technology](#technology)
+- [Geometric](#geometric)
+- [Fantasy](#fantasy)
+- [Minimal](#minimal)
 
 ## Pages collection
 
