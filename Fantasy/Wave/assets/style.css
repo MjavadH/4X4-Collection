@@ -5,8 +5,10 @@
 }
 
 body {
+    overflow: hidden;
     font-size: 16px;
-    font-family: sans-serif
+    font-family: Poppins, sans-serif;
+    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
 }
 
 .main__404 {
@@ -17,7 +19,9 @@ body {
 
 .box__404 {
     height: 80%;
-    background-color: #0dcaf0;
+    background-color: #0093E9;
+    background-image: linear-gradient(0deg, #0093E9 0%, #80D0C7 100%);
+
     width: 100%;
     display: flex;
     justify-content: center;
@@ -25,47 +29,37 @@ body {
 }
 
 .text__404 {
-    font-size: 12vw;
+    font-size: 10em;
     display: inline-flex;
-    font-family: Tahoma, "B Titr", sans-serif;
-    -webkit-text-stroke: 3px #068299;
-}
-
-.text__404 h1:nth-child(2) {
-    -webkit-animation: text404nth-child2 9s infinite;
-    -o-animation: text404nth-child2 9s infinite;
-    animation: text404nth-child2 9s infinite;
-    letter-spacing: 5px;
+    font-family: Tahoma, sans-serif;
+    -webkit-text-stroke: 2px #068299;
 }
 
 .text__404 h1:nth-child(1) {
-    -webkit-animation: text404nth-child1 6s infinite;
-    -o-animation: text404nth-child1 6s infinite;
-    animation: text404nth-child1 6s infinite;
+    -webkit-animation: Wave-animation 10s infinite;
+    -o-animation: Wave-animation 10s infinite;
+    animation: Wave-animation 10s infinite;
+}
+
+.text__404 h1:nth-child(2) {
+    -webkit-animation: Wave-animation 30s infinite;
+    -o-animation: Wave-animation 30s infinite;
+    animation: Wave-animation 30s infinite;
 }
 
 .text__404 h1:nth-child(3) {
-    -webkit-animation: text404nth-child1 12s infinite reverse;
-    -o-animation: text404nth-child1 12s infinite reverse;
-    animation: text404nth-child1 12s infinite reverse;
+    -webkit-animation: Wave-animation 20s infinite;
+    -o-animation: Wave-animation 20s infinite;
+    animation: Wave-animation 20s infinite;
 }
 
-@keyframes text404nth-child1 {
+@keyframes Wave-animation {
     0%, 100% {
-        transform: translateY(-50px);
+        transform: translateY(-50px) skewY(-2deg);
 
     }
     50% {
-        transform: translateY(50px);
-    }
-}
-
-@keyframes text404nth-child2 {
-    0%, 100% {
-        transform: translateY(50px);
-    }
-    50% {
-        transform: translateY(-50px)
+        transform: translateY(50px) skew(2deg) skewY(2deg);
     }
 }
 
@@ -78,7 +72,6 @@ body {
 .title__404 {
     font-size: 1.5rem;
     font-weight: 500;
-    font-family: "B Titr", sans-serif
 }
 
 .desc__404 {
@@ -111,7 +104,7 @@ body {
     width: 100%;
     height: 20%;
     animation: wave 7s infinite;
-    background-color: #0dcaf0;
+    background: #80D0C7;
     position: relative;
     transform: rotateZ(180deg);
     top: 1px;
@@ -126,12 +119,20 @@ body {
     }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 768px) {
     .box__404 {
         flex-direction: column;
     }
 
+    .text__404 {
+        font-size: 4.5em;
+    }
+
+    .text__404 h1 {
+        padding: 0 0.25rem;
+    }
+
     .description__404 {
-        width: 80%;
+        width: 90%;
     }
 }
