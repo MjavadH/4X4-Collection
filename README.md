@@ -23,7 +23,7 @@ A collection of simple 404 pages for use on websites
     
 ### Geometric
 - Abstract [preview](https://mjavadh.github.io/Collection-of-404-pages/Geometric/Abstract/index.html)
-- Halo [preview](https://mjavadh.github.io/Collection-of-404-pages/Geometric/Halo/index.html)
+- CircleBeat [preview](https://mjavadh.github.io/Collection-of-404-pages/Geometric/CircleBeat/index.html)
 - OopsBox [preview](https://mjavadh.github.io/Collection-of-404-pages/Geometric/OopsBox/index.html)
 - GlassStation [preview](https://mjavadh.github.io/Collection-of-404-pages/Geometric/GlassStation/index.html)
 
