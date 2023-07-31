@@ -10,7 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 16px;
-    font-family: "vazir", sans-serif;
+    font-family: Poppins, sans-serif;
     background: var(--redBackground_color);
     color: rgba(255, 255, 255, 0.8);
     overflow: hidden !important;
@@ -31,8 +31,8 @@ a {
 }
 
 .Circle {
-    width: 45vw;
-    height: 45vw;
+    width: 35rem;
+    height: 35rem;
     border-radius: 50%;
     background: var(--red_color1);
     box-shadow: var(--red_color2) 0 0 5px 45px,
@@ -61,20 +61,14 @@ a {
 }
 
 .Circle h1 {
-    font-size: 12vw;
+    font-size: 12em;
     margin: 0;
     color: var(--redBackground_color);
     user-select: none;
 }
 
 .Circle h2 {
-    font-size: 3vw;
-    margin: 5px 0;
-    user-select: none;
-}
-
-.Circle p {
-    font-size: 1.1vw;
+    font-size: 2em;
     margin: 5px 0;
     user-select: none;
 }
@@ -89,7 +83,7 @@ a {
     border: #f8f9fa 1px solid;
     padding: .375rem .75rem;
     margin: .375rem;
-    font-size: 1.1vw;
+    font-size: 1em;
     border-radius: .25rem;
     color: #f8f9fa;
     transition: all .5s ease-in-out;
@@ -109,19 +103,15 @@ a {
     }
 
     .Circle h1 {
-        font-size: 120px;
+        font-size: 7em;
     }
 
     .Circle h2 {
-        font-size: 16px;
-    }
-
-    .Circle p {
-        display: none;
+        font-size: 1.5em;
     }
 
     .btn {
-        font-size: 10px;
+        font-size: 0.825em;
     }
 }
 
