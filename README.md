@@ -55,9 +55,25 @@ A collection of simple 404 pages for use on websites
     
 ### Geometric
 - Abstract [preview](https://mjavadh.github.io/Collection-of-404-pages/Geometric/Abstract/index.html)
+      <details>
+      <summary>image</summary>
+      <img src="https://github.com/MjavadH/Collection-of-404-pages/blob/master/Geometric/Abstract/Image.png">
+      </details>
 - CircleBeat [preview](https://mjavadh.github.io/Collection-of-404-pages/Geometric/CircleBeat/index.html)
+      <details>
+      <summary>image</summary>
+      <img src="https://github.com/MjavadH/Collection-of-404-pages/blob/master/Geometric/CircleBeat/Image.png">
+      </details>
 - OopsBox [preview](https://mjavadh.github.io/Collection-of-404-pages/Geometric/OopsBox/index.html)
+      <details>
+      <summary>image</summary>
+      <img src="https://github.com/MjavadH/Collection-of-404-pages/blob/master/Geometric/OopsBox/Image.png">
+      </details>
 - GlassStation [preview](https://mjavadh.github.io/Collection-of-404-pages/Geometric/GlassStation/index.html)
+      <details>
+      <summary>image</summary>
+      <img src="https://github.com/MjavadH/Collection-of-404-pages/blob/master/Geometric/GlassStation/Image.png">
+      </details>
 
 ### Fantasy 
 - Night sky [preview](https://mjavadh.github.io/Collection-of-404-pages/Fantasy/Night%20sky/index.html)
