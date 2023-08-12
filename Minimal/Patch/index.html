@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page 404 Patch</title>
+    <!-- Style -->
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="orange">
+
+<div class="color-picker">
+    <div class="btn" id="pink"></div>
+    <div class="btn" id="magenta"></div>
+    <div class="btn" id="purple"></div>
+    <div class="btn active" id="orange"></div>
+</div>
+
+<div class="container">
+    <h1 class="text404">4</h1>
+    <div id="patch" class="patch_container">
+        <div class="patch_under patch">
+            <div class="dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+            <div class="dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+        <div class="patch_top patch">
+            <div class="dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+            <div class="dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+    </div>
+    <h1 class="text404">4</h1>
+</div>
+
+<script>
+    let btns = document.getElementsByClassName("btn");
+    for (let i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", () => {
+            for (let g = 0; g < btns.length; g++) {
+                btns[g].className = "btn";
+            }
+            btns[i].className = "btn active";
+            document.querySelector("body").className = btns[i].id
+        })
+    }
+</script>
+</body>
+</html>

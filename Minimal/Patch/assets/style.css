@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.text404 {
+    font-size: 12em;
+}
+
+.patch_container {
+    width: 300px;
+    height: 300px;
+    margin: 0 3.75rem;
+    position: relative;
+}
+
+.patch_container * {
+    position: absolute;
+}
+
+.patch_container .patch {
+    width: 120px;
+    height: 300px;
+    top: 0;
+    left: 90px;
+    transform-origin: center;
+    border-radius: 30px;
+    z-index: 0;
+}
+
+.patch_container .patch .dots {
+    width: 100%;
+    height: 50%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    z-index: 0;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, 1fr) 2fr;
+    grid-gap: 3px;
+    justify-content: center;
+    align-items: center;
+}
+
+.patch_container .patch .dots:nth-child(odd) {
+    top: 0;
+}
+
+.patch_container .patch .dots:nth-child(even) {
+    bottom: 0;
+    transform: rotate(180deg);
+}
+
+.patch_container .patch .dots .dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    margin: 5px;
+    position: relative;
+    z-index: 0;
+}
+
+.patch_container .patch_under {
+    transform: rotate(45deg);
+}
+
+.patch_container .patch_top {
+    transform: rotate(-45deg);
+}
+
+/* colors */
+body.orange {
+    background-color: var(--orange-patch_dot-bg-color);
+}
+
+body.pink {
+    background-color: var(--pink-patch_dot-bg-color);
+}
+
+body.magenta {
+    background-color: var(--magenta-patch_dot-bg-color);
+}
+
+body.purple {
+    background-color: var(--purple-patch_dot-bg-color);
+}
+
+.orange .patch_container .patch {
+    background-color: var(--orange-patch-bg-color);
+}
+
+.orange .patch_container .patch.patch_under {
+    background: var(--orange-patch_under-bg)
+}
+
+.orange .patch_container .patch .dots .dot {
+    background-color: var(--orange-patch_dot-bg-color);
+}
+
+.pink .patch_container .patch {
+    background-color: var(--pink-patch-bg-color);
+}
+
+.pink .patch_container .patch.patch_under {
+    background: var(--pink-patch_under-bg)
+}
+
+.pink .patch_container .patch .dots .dot {
+    background-color: var(--pink-patch_dot-bg-color);
+}
+
+.magenta .patch_container .patch {
+    background-color: var(--magenta-patch-bg-color);
+}
+
+.magenta .patch_container .patch.patch_under {
+    background: var(--magenta-patch_under-bg)
+}
+
+.magenta .patch_container .patch .dots .dot {
+    background-color: var(--magenta-patch_dot-bg-color);
+}
+
+.purple .patch_container .patch {
+    background-color: var(--purple-patch-bg-color);
+}
+
+.purple .patch_container .patch.patch_under {
+    background: var(--purple-patch_under-bg)
+}
+
+.purple .patch_container .patch .dots .dot {
+    background-color: var(--purple-patch_dot-bg-color);
+}
+
+:root {
+    --pink-patch-bg-color: #f64c91;
+    --pink-patch_under-bg: linear-gradient(to bottom, #f64c91, #f64c91 20%, #b3204f 29%, #b3204f 29%, #b3204f 71%, #b3204f 71%, #f64c91 80%, #f64c91);
+    --pink-patch_dot-bg-color: #f887db;
+    --magenta-patch-bg-color: #db40ce;
+    --magenta-patch_under-bg: linear-gradient(to bottom, #db40ce, #db40ce 20%, #841680 29%, #841680 29%, #841680 71%, #841680 71%, #db40ce 80%, #db40ce);
+    --magenta-patch_dot-bg-color: #f76ff4;
+    --purple-patch-bg-color: #8f5bdc;
+    --purple-patch_under-bg: linear-gradient(to bottom, #8f5bdc, #8f5bdc 20%, #4c208a 29%, #4c208a 29%, #4c208a 71%, #4c208a 71%, #8f5bdc 80%, #8f5bdc);
+    --purple-patch_dot-bg-color: #ef99f2;
+    --orange-patch-bg-color: #f99d59;
+    --orange-patch_under-bg: linear-gradient(to bottom, #f99d59, #f99d59 20%, #b95c3e 29%, #b95c3e 29%, #b95c3e 71%, #b95c3e 71%, #f99d59 80%, #f99d59);
+    --orange-patch_dot-bg-color: #fcd88c;
+}
+
+/* color picker*/
+.color-picker {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.color-picker .btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: #fff 2px solid;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.5);
+    margin: 0 0.5rem;
+    cursor: pointer;
+}
+
+.color-picker .btn.active {
+    border: #111 2px solid;
+}
+
+.color-picker #pink {
+    background-color: var(--pink-patch-bg-color);
+}
+
+.color-picker #magenta {
+    background-color: var(--magenta-patch-bg-color);
+}
+
+.color-picker #purple {
+    background-color: var(--purple-patch-bg-color);
+}
+
+.color-picker #orange {
+    background-color: var(--orange-patch-bg-color);
+}
