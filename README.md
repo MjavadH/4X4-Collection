@@ -94,3 +94,12 @@ A collection of simple 404 pages for use on websites
 
 ### Minimal
 - See [preview](https://mjavadh.github.io/Collection-of-404-pages/Minimal/See/index.html)
+      <details>
+      <summary>image</summary>
+      <img src="https://github.com/MjavadH/Collection-of-404-pages/blob/master/Minimal/See/Image.png">
+      </details>
+- Patch [preview](https://mjavadh.github.io/Collection-of-404-pages/Minimal/Patch/index.html)
+      <details>
+      <summary>image</summary>
+      <img src="https://github.com/MjavadH/Collection-of-404-pages/blob/master/Minimal/Patch/Image.png">
+      </details>
