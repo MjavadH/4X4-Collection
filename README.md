@@ -77,8 +77,29 @@ A collection of simple 404 pages for use on websites
 
 ### Fantasy 
 - Night sky [preview](https://mjavadh.github.io/Collection-of-404-pages/Fantasy/Night%20sky/index.html)
+      <details>
+      <summary>image</summary>
+      <img src="https://github.com/MjavadH/Collection-of-404-pages/blob/master/Fantasy/Night%20sky/Image.png">
+      </details>
 - Wave [preview](https://mjavadh.github.io/Collection-of-404-pages/Fantasy/Wave/index.html)
+      <details>
+      <summary>image</summary>
+      <img src="https://github.com/MjavadH/Collection-of-404-pages/blob/master/Fantasy/Wave/Image.png">
+      </details>
 - LostSpace [preview](https://mjavadh.github.io/Collection-of-404-pages/Fantasy/LostSpace/index.html)
+      <details>
+      <summary>image</summary>
+      <img src="https://github.com/MjavadH/Collection-of-404-pages/blob/master/Fantasy/LostSpace/Image.png">
+      </details>
 
 ### Minimal
 - See [preview](https://mjavadh.github.io/Collection-of-404-pages/Minimal/See/index.html)
+      <details>
+      <summary>image</summary>
+      <img src="https://github.com/MjavadH/Collection-of-404-pages/blob/master/Minimal/See/Image.png">
+      </details>
+- Patch [preview](https://mjavadh.github.io/Collection-of-404-pages/Minimal/Patch/index.html)
+      <details>
+      <summary>image</summary>
+      <img src="https://github.com/MjavadH/Collection-of-404-pages/blob/master/Minimal/Patch/Image.png">
+      </details>
