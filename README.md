@@ -1,5 +1,5 @@
-# Collection of 404 pages
-A collection of simple 404 pages for use on websites
+# 4 ✖️ 4 Collection
+Simple 404 collection for use in personal and commercial projects
 [preview](https://mjavadh.github.io/Collection-of-404-pages/)
 
 ## Categories
