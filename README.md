@@ -74,6 +74,11 @@ Simple 404 collection for use in personal and commercial projects
       <summary>image</summary>
       <img src="https://github.com/MjavadH/Collection-of-404-pages/blob/master/Geometric/GlassStation/Image.png">
       </details>
+- Geometric Patterns [preview](https://mjavadh.github.io/Collection-of-404-pages/Geometric/Geometric%20Patterns/index.html)
+      <details>
+      <summary>image</summary>
+      <img src="https://github.com/MjavadH/Collection-of-404-pages/blob/master/Geometric/Geometric%20Patterns/Image.png">
+      </details>
 
 ### Fantasy 
 - Night sky [preview](https://mjavadh.github.io/Collection-of-404-pages/Fantasy/Night%20sky/index.html)
