@@ -1,6 +1,6 @@
 # 4 ✖️ 4 Collection
 Simple 404 collection for use in personal and commercial projects
-[preview](https://mjavadh.github.io/Collection-of-404-pages/)
+[preview](https://mjavadh.github.io/4X4-Collection/)
 
 ## Categories
 
@@ -12,104 +12,104 @@ Simple 404 collection for use in personal and commercial projects
 ## Pages collection
 
 ### Technology 
-- Matrix [preview](https://mjavadh.github.io/Collection-of-404-pages/Technology/Matrix/index.html)
+- Matrix [preview](https://mjavadh.github.io/4X4-Collection/Technology/Matrix/index.html)
       <details>
       <summary>image</summary>
-      <img src="https://github.com/MjavadH/Collection-of-404-pages/blob/master/Technology/Matrix/Image.png">
+      <img src="https://github.com/MjavadH/4X4-Collection/blob/master/Technology/Matrix/Image.png">
       </details>
-- Glitch [preview](https://mjavadh.github.io/Collection-of-404-pages/Technology/Glitch/index.html)
+- Glitch [preview](https://mjavadh.github.io/4X4-Collection/Technology/Glitch/index.html)
       <details>
       <summary>image</summary>
-      <img src="https://github.com/MjavadH/Collection-of-404-pages/blob/master/Technology/Glitch/Image.png">
+      <img src="https://github.com/MjavadH/4X4-Collection/blob/master/Technology/Glitch/Image.png">
       </details>
-- Terminal [preview](https://mjavadh.github.io/Collection-of-404-pages/Technology/Terminal/index.html)
+- Terminal [preview](https://mjavadh.github.io/4X4-Collection/Technology/Terminal/index.html)
       <details>
       <summary>image</summary>
-      <img src="https://github.com/MjavadH/Collection-of-404-pages/blob/master/Technology/Terminal/Image.png">
+      <img src="https://github.com/MjavadH/4X4-Collection/blob/master/Technology/Terminal/Image.png">
       </details>
-- pixelated [preview](https://mjavadh.github.io/Collection-of-404-pages/Technology/pixelated/index.html)
+- pixelated [preview](https://mjavadh.github.io/4X4-Collection/Technology/pixelated/index.html)
       <details>
       <summary>image</summary>
-      <img src="https://github.com/MjavadH/Collection-of-404-pages/blob/master/Technology/pixelated/Image.png">
+      <img src="https://github.com/MjavadH/4X4-Collection/blob/master/Technology/pixelated/Image.png">
       </details>
-- Neon [preview](https://mjavadh.github.io/Collection-of-404-pages/Technology/Neon/index.html)
+- Neon [preview](https://mjavadh.github.io/4X4-Collection/Technology/Neon/index.html)
       <details>
       <summary>image</summary>
-      <img src="https://github.com/MjavadH/Collection-of-404-pages/blob/master/Technology/Neon/Image.png">
+      <img src="https://github.com/MjavadH/4X4-Collection/blob/master/Technology/Neon/Image.png">
       </details>
-- CMD [preview](https://mjavadh.github.io/Collection-of-404-pages/Technology/CMD/index.html)
+- CMD [preview](https://mjavadh.github.io/4X4-Collection/Technology/CMD/index.html)
       <details>
       <summary>image</summary>
-      <img src="https://github.com/MjavadH/Collection-of-404-pages/blob/master/Technology/CMD/Image.png">
+      <img src="https://github.com/MjavadH/4X4-Collection/blob/master/Technology/CMD/Image.png">
       </details>
-- Ubuntu [preview](https://mjavadh.github.io/Collection-of-404-pages/Technology/Ubuntu/index.html)
+- Ubuntu [preview](https://mjavadh.github.io/4X4-Collection/Technology/Ubuntu/index.html)
       <details>
       <summary>image</summary>
-      <img src="https://github.com/MjavadH/Collection-of-404-pages/blob/master/Technology/Ubuntu/Image.png">
+      <img src="https://github.com/MjavadH/4X4-Collection/blob/master/Technology/Ubuntu/Image.png">
       </details>
-- PowerShell [preview](https://mjavadh.github.io/Collection-of-404-pages/Technology/PowerShell/index.html)
+- PowerShell [preview](https://mjavadh.github.io/4X4-Collection/Technology/PowerShell/index.html)
       <details>
       <summary>image</summary>
-      <img src="https://github.com/MjavadH/Collection-of-404-pages/blob/master/Technology/PowerShell/Image.png">
+      <img src="https://github.com/MjavadH/4X4-Collection/blob/master/Technology/PowerShell/Image.png">
       </details>
     
 ### Geometric
-- Abstract [preview](https://mjavadh.github.io/Collection-of-404-pages/Geometric/Abstract/index.html)
+- Abstract [preview](https://mjavadh.github.io/4X4-Collection/Geometric/Abstract/index.html)
       <details>
       <summary>image</summary>
-      <img src="https://github.com/MjavadH/Collection-of-404-pages/blob/master/Geometric/Abstract/Image.png">
+      <img src="https://github.com/MjavadH/4X4-Collection/blob/master/Geometric/Abstract/Image.png">
       </details>
-- CircleBeat [preview](https://mjavadh.github.io/Collection-of-404-pages/Geometric/CircleBeat/index.html)
+- CircleBeat [preview](https://mjavadh.github.io/4X4-Collection/Geometric/CircleBeat/index.html)
       <details>
       <summary>image</summary>
-      <img src="https://github.com/MjavadH/Collection-of-404-pages/blob/master/Geometric/CircleBeat/Image.png">
+      <img src="https://github.com/MjavadH/4X4-Collection/blob/master/Geometric/CircleBeat/Image.png">
       </details>
-- OopsBox [preview](https://mjavadh.github.io/Collection-of-404-pages/Geometric/OopsBox/index.html)
+- OopsBox [preview](https://mjavadh.github.io/4X4-Collection/Geometric/OopsBox/index.html)
       <details>
       <summary>image</summary>
-      <img src="https://github.com/MjavadH/Collection-of-404-pages/blob/master/Geometric/OopsBox/Image.png">
+      <img src="https://github.com/MjavadH/4X4-Collection/blob/master/Geometric/OopsBox/Image.png">
       </details>
-- GlassStation [preview](https://mjavadh.github.io/Collection-of-404-pages/Geometric/GlassStation/index.html)
+- GlassStation [preview](https://mjavadh.github.io/4X4-Collection/Geometric/GlassStation/index.html)
       <details>
       <summary>image</summary>
-      <img src="https://github.com/MjavadH/Collection-of-404-pages/blob/master/Geometric/GlassStation/Image.png">
+      <img src="https://github.com/MjavadH/4X4-Collection/blob/master/Geometric/GlassStation/Image.png">
       </details>
-- Geometric Patterns [preview](https://mjavadh.github.io/Collection-of-404-pages/Geometric/Geometric%20Patterns/index.html)
+- Geometric Patterns [preview](https://mjavadh.github.io/4X4-Collection/Geometric/Geometric%20Patterns/index.html)
       <details>
       <summary>image</summary>
-      <img src="https://github.com/MjavadH/Collection-of-404-pages/blob/master/Geometric/Geometric%20Patterns/Image.png">
+      <img src="https://github.com/MjavadH/4X4-Collection/blob/master/Geometric/Geometric%20Patterns/Image.png">
       </details>
 
 ### Fantasy 
-- Night sky [preview](https://mjavadh.github.io/Collection-of-404-pages/Fantasy/Night%20sky/index.html)
+- Night sky [preview](https://mjavadh.github.io/4X4-Collection/Fantasy/Night%20sky/index.html)
       <details>
       <summary>image</summary>
-      <img src="https://github.com/MjavadH/Collection-of-404-pages/blob/master/Fantasy/Night%20sky/Image.png">
+      <img src="https://github.com/MjavadH/4X4-Collection/blob/master/Fantasy/Night%20sky/Image.png">
       </details>
-- Wave [preview](https://mjavadh.github.io/Collection-of-404-pages/Fantasy/Wave/index.html)
+- Wave [preview](https://mjavadh.github.io/4X4-Collection/Fantasy/Wave/index.html)
       <details>
       <summary>image</summary>
-      <img src="https://github.com/MjavadH/Collection-of-404-pages/blob/master/Fantasy/Wave/Image.png">
+      <img src="https://github.com/MjavadH/4X4-Collection/blob/master/Fantasy/Wave/Image.png">
       </details>
-- LostSpace [preview](https://mjavadh.github.io/Collection-of-404-pages/Fantasy/LostSpace/index.html)
+- LostSpace [preview](https://mjavadh.github.io/4X4-Collection/Fantasy/LostSpace/index.html)
       <details>
       <summary>image</summary>
-      <img src="https://github.com/MjavadH/Collection-of-404-pages/blob/master/Fantasy/LostSpace/Image.png">
+      <img src="https://github.com/MjavadH/4X4-Collection/blob/master/Fantasy/LostSpace/Image.png">
       </details>
-- Letter hop [preview](https://mjavadh.github.io/Collection-of-404-pages/Fantasy/Letters%20hop/index.html)
+- Letter hop [preview](https://mjavadh.github.io/4X4-Collection/Fantasy/Letters%20hop/index.html)
       <details>
       <summary>image</summary>
-      <img src="https://github.com/MjavadH/Collection-of-404-pages/blob/master/Fantasy/Letters%20hop/Image.png">
+      <img src="https://github.com/MjavadH/4X4-Collection/blob/master/Fantasy/Letters%20hop/Image.png">
       </details>
 
 ### Minimal
-- See [preview](https://mjavadh.github.io/Collection-of-404-pages/Minimal/See/index.html)
+- See [preview](https://mjavadh.github.io/4X4-Collection/Minimal/See/index.html)
       <details>
       <summary>image</summary>
-      <img src="https://github.com/MjavadH/Collection-of-404-pages/blob/master/Minimal/See/Image.png">
+      <img src="https://github.com/MjavadH/4X4-Collection/blob/master/Minimal/See/Image.png">
       </details>
-- Patch [preview](https://mjavadh.github.io/Collection-of-404-pages/Minimal/Patch/index.html)
+- Patch [preview](https://mjavadh.github.io/4X4-Collection/Minimal/Patch/index.html)
       <details>
       <summary>image</summary>
-      <img src="https://github.com/MjavadH/Collection-of-404-pages/blob/master/Minimal/Patch/Image.png">
+      <img src="https://github.com/MjavadH/4X4-Collection/blob/master/Minimal/Patch/Image.png">
       </details>
