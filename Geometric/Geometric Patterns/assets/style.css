@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  background: #1d1934;
+  color: #1d1934;
+  padding: 1.5rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.worklet-canvas {
+  --fluid-pattern-seed: MjavadH;
+  --fluid-pattern-bg-color: #1d1934;
+  /*The color of the shapes*/
+  --fluid-pattern-color-1: #ffd53d;
+  --fluid-pattern-color-2: #f0f1ff;
+  --fluid-pattern-color-3: #f25c54;
+  --fluid-pattern-color-4: #48cb8a;
+  --fluid-pattern-color-5: #91C8E4;
+  --fluid-pattern-color-6: #FFC0CB;
+  --fluid-pattern-color-7: #2C74B3;
+  --fluid-pattern-color-8: #FF8989;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-image: paint(fluidPattern);
+}
+
+.glass-Box {
+  position: relative;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.35);
+  -webkit-backdrop-filter: blur(16px) saturate(200%);
+  backdrop-filter: blur(16px) saturate(200%);
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.22);
+  border-radius: 0.75rem;
+  z-index: 1;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  max-width: 26rem;
+  text-align: center;
+}
+.glass-Box h1 {
+  font-size: 5rem;
+}
+
+.glass-Box p {
+  font-size: 1.125rem;
+  margin-bottom: 1.5rem;
+}
+
+.button {
+  display: block;
+  height: 2.75rem;
+  line-height: 2.75rem;
+  background: #1d1934;
+  color: #fff;
+  border: 0;
+  font-weight: 600;
+  border-radius: 0.35rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
