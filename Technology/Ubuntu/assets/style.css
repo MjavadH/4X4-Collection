@@ -146,3 +146,8 @@ a {
         color: #f9fff6;
     }
 }
+@media (max-width: 768px) {
+    .T404{
+        display: block;
+    }
+}
