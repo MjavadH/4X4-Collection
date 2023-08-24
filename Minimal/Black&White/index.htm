@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Page 404 Black & White</title>
+    <!--Style-->
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<section>
+    <div id="pointer"></div>
+    <div class="white">
+        <h1>4 <span>X</span> 4</h1>
+    </div>
+    <div class="black">
+        <h1>4 <span>X</span> 4</h1>
+    </div>
+</section>
+<!--Script-->
+<script type="text/javascript">
+    let pointer = document.getElementById("pointer");
+    window.onmousemove = function (e) {
+        pointer.style.left = (e.x - (pointer.offsetWidth / 2)) + "px";
+        pointer.style.top = (e.y - (pointer.offsetHeight / 2)) + "px";
+    }
+</script>
+</body>
+</html>
