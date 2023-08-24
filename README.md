@@ -113,3 +113,8 @@ Simple 404 collection for use in personal and commercial projects
       <summary>image</summary>
       <img src="https://github.com/MjavadH/4X4-Collection/blob/master/Minimal/Patch/Image.png">
       </details>
+- Black & White [preview](https://mjavadh.github.io/4X4-Collection/Minimal/Black&White/index.htm)
+      <details>
+      <summary>image</summary>
+      <img src="https://github.com/MjavadH/4X4-Collection/blob/master/Minimal/Black%26White/Image.png">
+      </details>
