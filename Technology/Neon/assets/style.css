@@ -21,19 +21,21 @@ body {
     font-family: 'neon', 'SH AraHalaBoShe', cursive;
     background: #000;
     color: rgb(230, 230, 230);
-    overflow: hidden !important;
+    overflow: hidden;
     -webkit-animation: Random_Color 5s linear infinite;
     -o-animation: Random_Color 5s linear infinite;
     animation: Random_Color 5s linear infinite;
 }
+
 @keyframes Random_Color {
-    0%,100%{
+    0%, 100% {
         filter: hue-rotate(0deg);
     }
-    50%{
-        filter: hue-rotate(300deg);
+    50% {
+        filter: hue-rotate(360deg);
     }
 }
+
 .Text_404 {
     padding: 0;
     display: flex;
