@@ -61,9 +61,9 @@ canvas {
     color: #0f0;
 }
 
-.title_404 span:nth-child(2) {
-    color: rgba(255, 2555, 255, 0);
-    -webkit-text-stroke: 1px #0f0;
+.text_stroke {
+    color: transparent;
+    -webkit-text-stroke: 3px #0f0;
 }
 
 .close_btn {
@@ -87,12 +87,15 @@ canvas {
     .card {
         width: 85%;
     }
-    .title_404{
+
+    .title_404 {
         font-size: 100px;
     }
-    .text_404{
+
+    .text_404 {
         font-size: 16px;
     }
+
     #search_box {
         font-size: 12px;
     }
