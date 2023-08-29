@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+}
+
+/* box_404 */
+.box_404 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 90%;
+    color: #fefefe;
+}
+
+.box_404 .UFO {
+    position: absolute;
+    top: 0;
+    width: 300px;
+    -webkit-animation: UFO-Anim 5s linear infinite;
+    -o-animation: UFO-Anim 5s linear infinite;
+    animation: UFO-Anim 5s linear infinite;
+}
+
+/* Text_404 */
+.box_404 .Text_404 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40%;
+    user-select: none;
+}
+
+.box_404 .Text_404 h1 {
+    font-size: 9em;
+}
+
+.box_404 .Text_404 h1.X {
+    position: relative;
+    top: -30px;
+    transform: rotateZ(-25deg);
+    color: #A24DF7;
+    -webkit-animation: X-Anim 5s ease-in infinite;
+    -o-animation: X-Anim 5s ease-in infinite;
+    animation: X-Anim 5s ease-in infinite;
+}
+
+/* BackGround */
+section {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 0;
+}
+
+/* Sky */
+section .sky {
+    width: 100%;
+    height: 60%;
+    background: #9FDFFE;
+}
+
+section .sky .cloud:nth-child(2) {
+    position: relative;
+    top: 30px;
+    left: 50px;
+    width: 130px;
+    height: 130px;
+}
+
+section .sky .cloud:nth-child(3) {
+    position: absolute;
+    top: 100px;
+    right: 60px;
+}
+
+section .sky .sun {
+    position: absolute;
+    right: 60px;
+    width: 180px;
+    height: 180px;
+}
+
+/* Farm */
+section .Farm {
+    width: 100%;
+    height: 10%;
+    background: #FAD320;
+    position: relative;
+    display: flex;
+}
+
+section .Farm .hey {
+    position: absolute;
+    bottom: -5px;
+    left: -15px;
+    transform: scale(0.6);
+    width: 200px;
+}
+
+section .Farm .Fence {
+    width: 30px;
+    height: 120px;
+    position: relative;
+    bottom: -8px;
+    background: chocolate;
+    border-radius: 50px 50px 0 0;
+    margin-right: 30px;
+}
+
+section .Farm .Fence::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 30px;
+    position: relative;
+    top: 45%;
+    left: 30px;
+    background: chocolate;
+}
+
+/* Plain */
+section .plain {
+    width: 100%;
+    height: 30%;
+    background: #72AE2A;
+}
+
+section .plain .house {
+    position: absolute;
+    right: -50px;
+    bottom: -50px;
+    width: 480px;
+    height: 480px;
+}
+
+section .plain .chicken.feed {
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    width: 160px;
+    height: 160px;
+}
+
+section .plain .chicken:not(.feed) {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 160px;
+    height: 160px;
+    transform: rotateY(180deg);
+}
+
+/* Animation */
+@keyframes X-Anim {
+    0%, 100% {
+        transform: translateY(0) rotateZ(-25deg);
+    }
+    50% {
+        transform: translateY(-10px) rotateZ(-20deg);
+    }
+}
+
+@keyframes UFO-Anim {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+@media (max-width: 768px) {
+    .box_404 .Text_404 {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .box_404 .Text_404 h1 {
+        font-size: 8em;
+    }
+
+    .box_404 .Text_404 h1.X {
+        top: -60px;
+    }
+
+    section .sky .cloud:nth-child(2) {
+        width: 90px;
+        height: 90px;
+        left: 0;
+        transform: rotateZ(-25deg);
+    }
+
+    section .sky .cloud:nth-child(3) {
+        display: none;
+    }
+
+    section .sky .sun {
+        width: 100px;
+        height: 100px;
+        right: 0;
+    }
+
+    section .plain .house {
+        display: none;
+    }
+
+    section .plain .chicken.feed {
+        left: 50px;
+        bottom: 10px;
+        width: 140px;
+        height: 140px;
+    }
+
+    section .plain .chicken:not(.feed) {
+        display: none;
+    }
+}
