@@ -257,3 +257,17 @@ section .plain .chicken:not(.feed) {
         display: none;
     }
 }
+
+@media (max-height: 501px) {
+    section .sky .cloud:nth-child(3) {
+        display: none;
+    }
+
+    section .plain .house {
+        display: none;
+    }
+
+    section .plain .chicken:not(.feed) {
+        display: none;
+    }
+}
