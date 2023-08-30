@@ -181,9 +181,17 @@ section .plain .chicken:not(.feed) {
 }
 
 @media (max-width: 768px) {
+    .box_404 {
+        height: 70%;
+    }
+
     .box_404 .Text_404 {
         width: 100%;
         justify-content: space-around;
+    }
+
+    .box_404 .UFO {
+        width: 250px;
     }
 
     .box_404 .Text_404 h1 {
@@ -192,6 +200,10 @@ section .plain .chicken:not(.feed) {
 
     .box_404 .Text_404 h1.X {
         top: -60px;
+    }
+
+    section .sky {
+        height: 55%;
     }
 
     section .sky .cloud:nth-child(2) {
@@ -211,13 +223,32 @@ section .plain .chicken:not(.feed) {
         right: 0;
     }
 
+    section .Farm {
+        height: 10%;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    section .Farm .Fence {
+        position: relative;
+        width: 30px;
+        height: 80px;
+    }
+
+    section .Farm .Fence::after {
+        height: 20px;
+    }
+
+    section .plain {
+        height: 35%;
+    }
+
     section .plain .house {
         display: none;
     }
 
     section .plain .chicken.feed {
-        left: 50px;
-        bottom: 10px;
+        position: relative;
         width: 140px;
         height: 140px;
     }
