@@ -1,3 +1,19 @@
+/* Add Polya font */
+@font-face {
+  font-family: Polya;
+  src: url('PolyaFont.otf') format("opentype");
+}
+/* Add GlitchCity font */
+@font-face {
+  font-family: GlitchCity;
+  src: url('GlitchCityRegular.ttf') format("truetype");
+}
+/* Add DoctorGlitch font */
+@font-face {
+  font-family: DoctorGlitch;
+  src: url('DoctorGlitch.otf') format("opentype");
+}
+
 *{box-sizing:border-box;margin:0;padding:0;}
 body{font-size: 16px;font-family: "Vazir",sans-serif;overflow: hidden !important}
 a{text-decoration: none;}
@@ -18,10 +34,11 @@ a{text-decoration: none;}
   background-color: rgb(14,14,14);
 }
 h1 {
-  font-family: "Source Sans Pro Black","Vazir",sans-serif;
+  font-family: "Source Sans Pro Black",Poppins,"Vazir",sans-serif;
   font-size: 10rem;
   text-transform: uppercase;
   text-align: center;
+  /*font-weight: lighter;*/
 }
 .text {
   position: relative;
