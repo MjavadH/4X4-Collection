@@ -1,0 +1,81 @@
+/* Source code: https://codepen.io/loktar00/pen/DdWxwL */
+/* Add `PINE JUNGLE NIGHT` font */
+@font-face {
+    font-family: JUNGLE;
+    src: url('PINE JUNGLE NIGHT.ttf') format('truetype');
+    font-weight: 900;
+}
+
+/* Add `WildDreams` font */
+@font-face {
+    font-family: WildDreams;
+    src: url("WildDreams.woff") format("woff");
+    src: url('WildDreams.otf') format('opentype');
+    font-weight: 900;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000;
+    height: 100vh;
+    color: #fff;
+    overflow: hidden;
+    font-size: 16px;
+    font-family: WildDreams, Poppins, sans-serif;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.text-404 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-404 h1 {
+    position: relative;
+    padding: 0 25px;
+    z-index: 2;
+    font-size: 13em;
+    -webkit-animation: Anim-404 ease-in-out infinite;
+    -o-animation: Anim-404 ease-in-out infinite;
+    animation: Anim-404 ease-in-out infinite;
+}
+
+.text-404 h1:nth-child(1) {
+    animation-duration: 5s;
+}
+
+.text-404 h1:nth-child(2) {
+    animation-duration: 10s;
+}
+
+.text-404 h1:nth-child(3) {
+    animation-duration: 8s;
+}
+
+@keyframes Anim-404 {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+@media (max-width: 768px) {
+    .text-404 h1 {
+        font-size: 8em;
+    }
+}
