@@ -669,6 +669,7 @@
         'retina_detect': true
     });
 
+    /*----- lazyLoad ----- */
     let lazyImages = [...document.querySelectorAll('.lazy-image')];
     let inAdvance = 300;
 
@@ -682,10 +683,8 @@
 
     }
 
-    lazyLoad();
-
-    window.addEventListener('scroll', _.throttle(lazyLoad, 16));
-    window.addEventListener('resize', _.throttle(lazyLoad, 16));
+    window.addEventListener('scroll', lazyLoad);
+    window.addEventListener('resize', lazyLoad);
 
 </script>
 </body>
