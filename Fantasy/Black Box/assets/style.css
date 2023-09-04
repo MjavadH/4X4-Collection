@@ -88,6 +88,17 @@ a {
     font-size: 2em;
 }
 
+.main .text-404 .back-btn {
+    margin: 1.8rem 0;
+    padding: 0.821rem 2rem;
+    border-radius: 8px;
+    border: 1px solid rgba(150, 150, 150, 0.10);
+}
+
+.main .text-404 .back-btn:hover {
+    border: 1px solid rgba(150, 150, 150, 0.20);
+}
+
 /* Menu bar */
 .menu {
     padding: 0.8rem;
@@ -267,7 +278,13 @@ a {
     .main .text-404 h1 {
         font-size: 7em;
     }
-
+    .main .text-404 p {
+        font-size: 1.7em;
+    }
+    .main .text-404 .back-btn {
+        margin: 0.8rem 0;
+        padding: 0.751rem 1.5rem;
+    }
     /* start ----- image-box ----- */
     .image-box {
         width: 100%;
