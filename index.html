@@ -685,7 +685,13 @@
 
     window.addEventListener('scroll', lazyLoad);
     window.addEventListener('resize', lazyLoad);
-
+    /*----- Auto dark mode ----- */
+    let now = new Date();
+    let hours = now.getHours();
+    let body = document.getElementById('body')
+    if (hours >= 20 || hours <= 8) {
+        body.classList.add("Dark")
+    }
 </script>
 </body>
 </html>
