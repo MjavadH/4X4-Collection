@@ -133,7 +133,7 @@
         }
     </style>
 </head>
-<body class="mw-100">
+<body id="body" class="mw-100">
 <header class="container-fluid" id="particles-js">
     <h1>
         <span class="line"></span>
@@ -676,11 +676,12 @@
     function lazyLoad() {
         lazyImages.forEach(image => {
             if (image.offsetTop < window.innerHeight + window.scrollY + inAdvance) {
-                image.src = image.dataset.src;
-                image.onload = () => image.classList.add('loaded');
+                if (!image.classList.contains('loaded')) {
+                    image.src = image.dataset.src;
+                    image.onload = () => image.classList.add('loaded');
+                }
             }
         });
-
     }
 
     window.addEventListener('scroll', lazyLoad);
