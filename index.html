@@ -9,129 +9,8 @@
     <!-- Style -->
     <link rel="stylesheet" href="assets/bootstrap.rtl.min.css">
     <link rel="stylesheet" href="assets/aos.css">
-    <style>
-        /* Add `Vazirmatn` font */
-        @font-face {
-            font-family: Vazirmatn;
-            src: url('assets/Vazirmatn-SemiBold.woff2') format('woff2');
-            font-weight: 600;
-            font-style: normal;
-            font-display: swap;
-        }
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+    <link rel="stylesheet" href="assets/style.css">
 
-        body {
-            font-size: 16px;
-            direction: rtl;
-            font-family: Vazirmatn, sans-serif;
-            background-color: #f9fff6;
-            color: #090909;
-            overflow-x: hidden
-        }
-
-        a {
-            text-decoration: none;
-            color: #1b2127
-        }
-
-        header {
-            color: #f9fff6;
-        }
-
-        header .line {
-            background: #f9fff6 !important;
-        }
-
-        ::-webkit-scrollbar {
-            background: var(--bs-gray-dark);
-            width: 5px;
-        }
-
-        ::-webkit-scrollbar-thumb {
-            border-radius: 1.2rem;
-            background: var(--bs-gray);
-        }
-
-        header {
-            display: flex;
-            height: 100vh;
-            background-color: black;
-            justify-content: center;
-            align-items: center;
-        }
-
-        header h1 {
-            position: absolute;
-            font-size: 5vw;
-        }
-
-        header h3 {
-            position: absolute;
-            bottom: 0;
-        }
-
-        .categories-title {
-            background: #f9fff6;
-            z-index: 1;
-            position: sticky;
-            top: 0;
-        }
-
-        .line {
-            display: inline-block;
-            border-radius: .2rem;
-            width: 25px;
-            height: 8px;
-            background-color: #090909;
-            vertical-align: middle;
-            margin: 0 7px;
-        }
-
-        .page a:hover div .lazy-image {
-
-            transform: scale(1.2) rotateZ(-5deg);
-        }
-
-        .page a div {
-            border-radius: 1.25rem;
-            overflow: hidden;
-        }
-
-        main {
-            padding: 1.2rem;
-        }
-
-        .lazy-image {
-            height: 100%;
-            width: 100%;
-            -o-object-fit: cover;
-            object-fit: cover;
-            border-radius: 1.25rem;
-            padding: 0;
-            background-color: #000;
-        }
-
-        img.lazy-image {
-            opacity: 0.1;
-            will-change: opacity;
-            transition: all 0.3s;
-        }
-
-        img.lazy-image.loaded {
-            opacity: 1;
-        }
-
-        .attr_img {
-            background: #dfdfdf;
-            width: 60px;
-            height: 60px;
-            border-radius: 15px;
-        }
-    </style>
 </head>
 <body id="body" class="mw-100">
 <header class="container-fluid" id="particles-js">
@@ -627,6 +506,7 @@
         once: true
     });
 
+    /*----- particle ----- */
     particlesJS('particles-js', {
         'particles': {
             'number': {
