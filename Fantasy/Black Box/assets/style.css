@@ -243,7 +243,7 @@ a {
 }
 
 /* ----- image-box ----- end */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     body {
         flex-direction: column;
     }
@@ -310,4 +310,37 @@ a {
         }
     }
     /* ----- image-box ----- end */
+}
+
+@media (max-height: 420px),(max-width: 245px) {
+    .main .text-404 {
+        height: 100%;
+        width: 100%;
+    }
+
+    /* image */
+    .main .image {
+        display: none;
+    }
+
+    /* ----- image-box ----- */
+    .image-box {
+        display: none;
+    }
+}
+
+@media (min-width: 1440px) {
+    .main .text-404 h1 {
+        font-size: 13em;
+    }
+
+    .main .text-404 p {
+        font-size: 3em;
+    }
+
+    .main .text-404 .back-btn {
+        margin: 2.8rem 0;
+        padding: 0.921rem 2.5rem;
+        font-size: 2rem;
+    }
 }
