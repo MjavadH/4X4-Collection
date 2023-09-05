@@ -211,7 +211,9 @@ a {
 /* start ----- image-box ----- */
 .image-box {
     width: 50px;
-    height: 90%;
+    height: var(--main-height);
+    position: absolute;
+    left: 0;
     margin: 0 0.75rem;
     padding: 0.25rem;
     background-color: #000000;
@@ -295,6 +297,7 @@ a {
         height: 50px;
         border-radius: 0;
         flex-direction: row;
+        position: relative;
     }
 
     .image-box img {
