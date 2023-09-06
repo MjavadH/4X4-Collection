@@ -11,7 +11,7 @@
 </head>
 <body>
 <!-- card -->
-<main class="main">
+<main id="main" class="main">
     <!-- Menu bar -->
     <div class="menu">
         <a href="#">
@@ -140,15 +140,18 @@
 </body>
 <!-- Script -->
 <script>
+    let main = document.getElementById("main");
     let toggle = document.getElementById("toggle");
     let menuitem = document.getElementById("menu-page");
 
     toggle.addEventListener("click", function () {
         if (menuitem.classList.contains("active")) {
             menuitem.classList.remove("active")
+            menuitem.style.height = 0 + "px"
             toggle.classList.remove("active")
         } else {
             menuitem.classList.add("active")
+            menuitem.style.height = (main.offsetHeight - 2) + "px"
             toggle.classList.add("active")
         }
     })

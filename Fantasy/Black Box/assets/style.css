@@ -185,7 +185,6 @@ a {
 
 .menu-page.active {
     padding: 80px 0;
-    height: calc(var(--main-height) - 2px);
 }
 
 .social_box {
