@@ -127,7 +127,8 @@
     <div class="image"><img id="big_image" src="assets/astronaut.png" alt="#"></div>
 </main>
 <!-- start ----- image-box (Delete this) ----- -->
-<div class="image-box">
+<div id="image-box" class="image-box">
+    <div id="close_ImageBox">X</div>
     <img class="small_image active" src="assets/astronaut.png" style="max-width: 50%;animation-delay: 800ms;" alt="#">
     <img class="small_image" src="assets/cute-ghost.png" style="max-width: 80%;animation-delay: 900ms;" alt="#">
     <img class="small_image" src="assets/female.png" style="max-width: 50%;animation-delay: 1000ms" alt="#">
@@ -153,8 +154,10 @@
     })
 
     /* start ----- image-box (Delete this) ----- */
+    let image_box = document.getElementById("image-box");
     let big_image = document.getElementById("big_image");
     let small_image = document.getElementsByClassName("small_image");
+    document.getElementById("close_ImageBox").addEventListener("click",() => image_box.style.display = "none")
     for (let smallImageKey in small_image) {
         small_image[smallImageKey].addEventListener("click", switchImage)
     }

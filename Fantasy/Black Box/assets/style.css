@@ -227,6 +227,26 @@ a {
     overflow: hidden;
 }
 
+#close_ImageBox {
+    width: 30px;
+    height: 22px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -3px;
+    padding: 2px;
+    background-color: #0a0a0a;
+    border: 1px solid rgba(150, 150, 150, 0.10);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+#close_ImageBox:hover {
+    border: 1px solid rgba(150, 150, 150, 0.20);
+}
+
 .image-box img {
     max-width: 80%;
     animation: GoIN 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55) backwards;
