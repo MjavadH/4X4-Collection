@@ -92,11 +92,11 @@ a {
     margin: 1.8rem 0;
     padding: 0.821rem 2rem;
     border-radius: 8px;
-    border: 1px solid rgba(150, 150, 150, 0.10);
+    border: 1px solid rgba(150, 150, 150, 0.40);
 }
 
 .main .text-404 .back-btn:hover {
-    border: 1px solid rgba(150, 150, 150, 0.20);
+    border: 1px solid rgba(150, 150, 150, 0.60);
 }
 
 /* Menu bar */
