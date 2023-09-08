@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Page 404 Square</title>
+    <!--Style-->
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<section id="Background" class="Background">
+    <div class="Square"></div>
+</section>
+<div class="glass-Box">
+    <h1>4 ▢ 4</h1>
+    <p>
+        Oops! page not found
+    </p>
+
+    <a class="button" href="../../index.html">Back To Home</a>
+
+</div>
+
+<script>
+    let square = document.querySelector(".Square");
+    let background = document.getElementById("Background");
+    let squareLen = (window.outerWidth / square.clientWidth) * (window.outerHeight / square.clientHeight);
+    for (let i = 0; i <= squareLen; i++) {
+        background.innerHTML += square.outerHTML;
+    }
+</script>
+</body>
+</html>
