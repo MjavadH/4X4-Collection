@@ -79,6 +79,11 @@ Simple 404 collection for use in personal and commercial projects
       <summary>image</summary>
       <img src="https://github.com/MjavadH/4X4-Collection/blob/master/Geometric/Geometric%20Patterns/Image.png">
       </details>
+- Square [preview](https://mjavadh.github.io/4X4-Collection/Geometric/Square/index.html)
+      <details>
+      <summary>image</summary>
+      <img src="https://github.com/MjavadH/4X4-Collection/blob/master/Geometric/Square/Image.png">
+      </details>
 
 ### Fantasy 
 - Night sky [preview](https://mjavadh.github.io/4X4-Collection/Fantasy/Night%20sky/index.html)
