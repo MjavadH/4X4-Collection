@@ -25,7 +25,7 @@
 <script>
     let square = document.querySelector(".Square");
     let background = document.getElementById("Background");
-    let squareLen = (window.outerWidth / square.clientWidth) * (window.outerHeight / square.clientHeight);
+    let squareLen = (window.outerWidth / square.clientWidth) * ((window.outerHeight / square.clientHeight) + 1);
     for (let i = 0; i <= squareLen; i++) {
         background.innerHTML += square.outerHTML;
     }

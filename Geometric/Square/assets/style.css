@@ -28,7 +28,7 @@ body {
 .Background {
     position: absolute;
     width: 110%;
-    height: 100%;
+    height: 110%;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
