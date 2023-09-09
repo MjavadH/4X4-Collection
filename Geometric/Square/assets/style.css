@@ -46,7 +46,7 @@ body {
     transition: 2s linear;
 }
 
-.Background .Square:hover {
+.Background .Square:hover, .Background .Square.active {
     background-color: var(--square-color);
     border: var(--square-color) 1px solid;
     transition: 0ms linear;

@@ -10,7 +10,7 @@
 </head>
 <body>
 <section id="Background" class="Background">
-    <div class="Square"></div>
+    <div onclick="ActiveSquare(this)" class="Square"></div>
 </section>
 <div class="glass-Box">
     <h1>4 ▢ 4</h1>
@@ -28,6 +28,14 @@
     let squareLen = (window.outerWidth / square.clientWidth) * ((window.outerHeight / square.clientHeight) + 1);
     for (let i = 0; i <= squareLen; i++) {
         background.innerHTML += square.outerHTML;
+    }
+
+    function ActiveSquare(e) {
+        if (e.classList.contains('active')) {
+            e.classList.remove("active")
+        } else {
+            e.classList.add("active")
+        }
     }
 </script>
 </body>
