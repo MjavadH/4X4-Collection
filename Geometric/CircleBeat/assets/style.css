@@ -41,12 +41,12 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    -webkit-animation: Halo 4s linear infinite;
-    -o-animation: Halo 4s linear infinite;
-    animation: Halo 4s linear infinite;
+    -webkit-animation: pulse 1s cubic-bezier(0.18, 0.89, 0.32, 1.28) infinite;
+    -o-animation: pulse 1s cubic-bezier(0.18, 0.89, 0.32, 1.28) infinite;
+    animation: pulse 1s cubic-bezier(0.18, 0.89, 0.32, 1.28) infinite;
 }
 
-@keyframes Halo {
+@keyframes pulse {
     0%, 100% {
         box-shadow: var(--red_color2) 0 0 5px 45px,
         var(--red_color3) 0 0 10px 75px,
@@ -55,7 +55,7 @@ a {
     50% {
         box-shadow: var(--red_color2) 0 0 5px 55px,
         var(--red_color3) 0 0 10px 95px,
-        var(--red_color4) 0 0 10px 125px;
+        var(--red_color4) 0 0 10px 145px;
         transform: scale(1.03);
     }
 }
