@@ -121,14 +121,20 @@ img.lazy-image.loaded {
     border-radius: 15px;
 }
 
-/* ----- Dark mode ----- */
-.Dark a{
+/* -------- Dark mode -------- */
+.Dark a {
     color: #fefefe;
 }
-.Dark , .Dark .categories-title{
+
+.Dark, .Dark .categories-title {
     background-color: #0a0a0a;
     color: #fefefe;
 }
-.Dark .attr_img{
+
+.Dark .line {
+    background-color: #fefefe;
+}
+
+.Dark .attr_img {
     background-color: #0f0f0f;
 }
