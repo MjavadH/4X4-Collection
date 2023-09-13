@@ -31,8 +31,8 @@ header {
     color: #f9fff6;
 }
 
-header .line {
-    background: #f9fff6 !important;
+a, path {
+    transition: 200ms linear;
 }
 
 ::-webkit-scrollbar {
@@ -53,6 +53,64 @@ header {
     align-items: center;
 }
 
+/* ------ GitHubBox ------ */
+.GitHubBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+/* ---- GitHub button ---- */
+.GitHub-btn {
+    margin: 0 0.4rem;
+    padding: 0.4rem 0.625rem;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: 500;
+    color: #fefefe;
+}
+
+.GitHub-btn.GitHub {
+    border: 1px #fefefe solid;
+}
+
+.GitHub-btn.GitHub:hover {
+    background: #fefefe;
+    color: #0f0f0f;
+}
+
+.GitHub-btn.GitHub:hover svg path {
+    fill: #0f0f0f;
+}
+
+/* -- GitHub button Star -- */
+.GitHub-btn.Star {
+    border: 1px #e3b341 solid;
+}
+
+.GitHub-btn.Star:hover {
+    background: #e3b341;
+    color: #0f0f0f;
+}
+
+/* GitHub button svg */
+.GitHub-btn.Star:hover svg path {
+    fill: #0f0f0f;
+}
+
+.GitHubBox a svg {
+    margin-right: 6px;
+}
+
+/* line */
+header .line {
+    background: #f9fff6 !important;
+}
+
+/* Text */
 header h1 {
     position: absolute;
     font-size: 5vw;
