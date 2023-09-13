@@ -24,11 +24,7 @@ body {
 
 a {
     text-decoration: none;
-    color: #1b2127
-}
-
-header {
-    color: #f9fff6;
+    color: #1b2127;
 }
 
 a, path {
@@ -45,9 +41,11 @@ a, path {
     background: var(--bs-gray);
 }
 
+/* -------- header -------- */
 header {
     display: flex;
     height: 100vh;
+    color: #f9fff6;
     background-color: black;
     justify-content: center;
     align-items: center;
@@ -121,6 +119,12 @@ header h3 {
     bottom: 0;
 }
 
+/* -------- main -------- */
+main {
+    padding: 1.2rem;
+}
+
+/* ------ title ------ */
 .categories-title {
     background: #f9fff6;
     z-index: 1;
@@ -138,18 +142,10 @@ header h3 {
     margin: 0 7px;
 }
 
-.page a:hover div .lazy-image {
-
-    transform: scale(1.2) rotateZ(-5deg);
-}
-
-.page a div {
+/* ---- image ---- */
+.page a .image {
     border-radius: 1.25rem;
     overflow: hidden;
-}
-
-main {
-    padding: 1.2rem;
 }
 
 .lazy-image {
@@ -172,6 +168,11 @@ img.lazy-image.loaded {
     opacity: 1;
 }
 
+.page a:hover .image .lazy-image {
+    transform: scale(1.2) rotateZ(-5deg);
+}
+
+/* ---- Attribute ---- */
 .attr_img {
     background: #dfdfdf;
     width: 60px;
