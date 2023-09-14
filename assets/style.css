@@ -24,18 +24,23 @@ i {
     padding: 0;
 }
 
+:root {
+    --background-color: #f9fff6;
+    --fore-color: #0f0f0f;
+}
+
 body {
     font-size: 16px;
     direction: rtl;
     font-family: Vazirmatn, sans-serif;
-    background-color: #f9fff6;
-    color: #090909;
+    background-color: var(--background-color);
+    color: var(--fore-color);;
     overflow-x: hidden
 }
 
 a {
     text-decoration: none;
-    color: #1b2127;
+    color: var(--fore-color);
 }
 
 a, path {
@@ -138,6 +143,7 @@ main {
 /* ------ title ------ */
 .categories-title {
     background: #f9fff6;
+    color: var(--fore-color);
     z-index: 1;
     position: sticky;
     top: 0;
@@ -148,7 +154,7 @@ main {
     border-radius: .2rem;
     width: 25px;
     height: 8px;
-    background-color: #090909;
+    background-color: var(--fore-color);
     vertical-align: middle;
     margin: 0 7px;
 }
@@ -192,17 +198,14 @@ img.lazy-image.loaded {
 }
 
 /* -------- Dark mode -------- */
-.Dark a {
-    color: #fefefe;
+.Dark:root {
+    --background-color: #0a0a0a;
+    --fore-color: #fefefe;
 }
 
 .Dark, .Dark .categories-title {
-    background-color: #0a0a0a;
-    color: #fefefe;
-}
-
-.Dark .line {
-    background-color: #fefefe;
+    background-color: var(--background-color);
+    color: var(--fore-color);
 }
 
 .Dark .attr_img {
