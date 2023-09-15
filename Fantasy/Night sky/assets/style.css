@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,7 +7,7 @@
 
 body {
     font-size: 16px;
-    font-family: "Vazir", sans-serif;
+    font-family: 'Poppins', sans-serif;
     overflow: hidden !important;
     background-color: rgb(14, 14, 14);
 }
@@ -40,7 +41,6 @@ a {
 }
 
 .text-404 h1 {
-    font-family: "Source Sans Pro Black", "Vazir", sans-serif;
     font-size: 10rem;
     text-transform: uppercase;
     text-align: center;
@@ -80,6 +80,10 @@ a {
     font-weight: bold;
 }
 
+.text p {
+    margin: 15px 0;
+}
+
 .btn:hover {
     color: #212529;
     background-color: #f8f9fa;
@@ -97,7 +101,7 @@ a {
     padding: .375rem .75rem;
     margin: .375rem;
     font-size: 1rem;
-    border-radius: .25rem;
+    border-radius: .5rem;
     color: #f8f9fa;
     transition: all .5s ease-in-out;
 }
@@ -108,10 +112,6 @@ a {
     }
 
     .text {
-        font-size: 1.1rem;
-    }
-
-    .btn {
-        font-size: 0.7rem;
+        font-size: 1.6rem;
     }
 }
