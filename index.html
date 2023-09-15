@@ -604,7 +604,7 @@
     /*----- Auto dark mode ----- */
     let now = new Date();
     let hours = now.getHours();
-    let body = document.getElementById('body')
+    let body = document.querySelector('html');
     if (hours >= 20 || hours <= 8) {
         body.classList.add("Dark")
     }
