@@ -21,13 +21,18 @@
 </div>
 <!-- Mouse move script -->
 <script type="text/javascript">
-    var container = document.getElementById('container');
+    const container = document.getElementById('container');
     window.onmousemove = function (e) {
         var x = -e.x / 5,
             y = -e.y / 5;
         container.style.backgroundPositionX = x + 'px';
         container.style.backgroundPositionY = y + 'px';
     }
+    /* Mobile gyroscope */
+    window.addEventListener("deviceorientation", function (e) {
+        container.style.backgroundPositionX = e.gamma / 3 + "px"
+        container.style.backgroundPositionY = e.beta / 3 + "px"
+    })
 </script>
 </body>
 </html>
