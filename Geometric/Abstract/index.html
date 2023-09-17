@@ -37,6 +37,11 @@
         container1.style.right = x + 'px';
         container1.style.bottom = y + 'px';
     }
+    /* Mobile gyroscope */
+    window.addEventListener("deviceorientation", function (e) {
+        container1.style.right = e.gamma/10 + "px"
+        container1.style.bottom = e.beta/10 + "px"
+    })
 </script>
 </body>
 </html>
