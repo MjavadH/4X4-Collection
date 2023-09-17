@@ -28,7 +28,7 @@ svg {
 
 main {
     width: 80%;
-    height: 60%;
+    height: 65%;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -ms-transition: all .3s ease-in-out;
@@ -120,10 +120,12 @@ main {
 .green {
     color: #3fc950;
 }
-#userInput::after{
+
+#userInput::after {
     content: '';
     width: 5px;
     height: 15px;
+    margin: 0 2px;
     position: relative;
     display: inline-block;
     background: white;
@@ -131,14 +133,16 @@ main {
     -o-animation: cursor 1s linear infinite;
     animation: cursor 1s linear infinite;
 }
+
 @keyframes cursor {
-    0%,100%{
+    0%, 100% {
         opacity: 1;
     }
-    50%{
+    50% {
         opacity: 0;
     }
 }
+
 /*max style*/
 .max main {
     width: 100%;
@@ -174,20 +178,27 @@ main {
 }
 
 @media (max-width: 991px) {
-    main{
+    main {
         width: 95%;
         height: 70%;
     }
-    .out_code{
+
+    .title_404 {
+        font-size: 1em;
+    }
+
+    .out_code {
         margin: .2rem 0;
     }
-    .keyboard{
+
+    .keyboard {
         position: relative;
         width: 100%;
         left: 0;
         top: -35px;
         height: 50px;
     }
+
     .min main {
         transform: translate(-200px, 660px) scale(0);
     }
