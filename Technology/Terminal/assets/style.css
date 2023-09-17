@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -10,7 +12,7 @@ body {
     align-items: center;
     height: 100vh;
     font-size: 18px;
-    font-family: "vazir", sans-serif;
+    font-family: 'Poppins', sans-serif;
     background: #171f37;
     color: rgba(255, 255, 255, 0.8);
     overflow: hidden !important;
