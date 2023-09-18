@@ -30,6 +30,7 @@ a {
 
 .texts h4 {
     font-size: 1.5rem;
+    margin: 8px 0;
 }
 
 .Square404 {
@@ -114,17 +115,25 @@ a {
         flex-direction: column;
         justify-content: space-evenly;
     }
-    .Square404{
+
+    .Square404 {
         width: 100%;
     }
-    .Square{
+
+    .Square {
         width: 150px;
         height: 150px;
     }
-    .Square h1{
-        font-size: 70px;
+
+    .Square h1 {
+        font-size: 5rem;
     }
+
     .texts {
         width: 100%;
+    }
+
+    .texts p {
+        margin: 7px 0;
     }
 }
