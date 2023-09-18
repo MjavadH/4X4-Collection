@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -22,6 +23,7 @@ body {
     align-items: center;
     background: url("pattern.png"), #151729;
     box-shadow: 0 15px 30px rgba(0, 0, 0, .5);
+    transition: 200ms linear;
 }
 
 #container .content {
@@ -30,6 +32,7 @@ body {
 }
 
 #container .content h1 {
+    font-family: 'Poppins', sans-serif;
     font-size: 18vw;
     color: #fff;
     line-height: 1em;
