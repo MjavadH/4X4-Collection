@@ -121,3 +121,24 @@ body {
         font-size: 0.7em;
     }
 }
+
+@media (min-width: 1440px) {
+    #container .content {
+        max-width: 80%;
+    }
+    #container .content h1 {
+        font-size: 15vw;
+    }
+
+    #container .content h4 {
+        font-size: 3vw;
+    }
+
+    #container .content p {
+        font-size: 2vw;
+    }
+
+    #container .content a {
+        font-size: 1.5vw;
+    }
+}
