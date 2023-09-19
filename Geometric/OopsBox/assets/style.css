@@ -65,14 +65,59 @@ body {
     border-radius: 25px;
     border-bottom: 4px solid #d00d56;
 }
+
 @media (max-width: 768px) {
-    #container{
+    #container {
         top: 5%;
         left: 5%;
         right: 5%;
         bottom: 5%;
     }
-    #container .content h1{
-        font-size: 150px;
+
+    #container .content h1 {
+        font-size: 10em;
+    }
+}
+
+@media (max-height: 420px),(max-width: 280px) {
+    #container {
+        top: 3%;
+        left: 3%;
+        right: 3%;
+        bottom: 3%;
+    }
+
+    #container .content h1 {
+        font-size: 8em;
+    }
+
+    #container .content h4 {
+        font-size: 1.3em;
+    }
+
+    #container .content p {
+        font-size: 1.1em;
+    }
+
+    #container .content a {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-height: 320px) {
+    #container .content h1 {
+        font-size: 7em;
+    }
+
+    #container .content h4 {
+        display: none;
+    }
+
+    #container .content p {
+
+    }
+
+    #container .content a {
+        font-size: 0.7em;
     }
 }
