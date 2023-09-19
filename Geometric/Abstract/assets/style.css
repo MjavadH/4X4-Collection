@@ -39,6 +39,7 @@ a {
     justify-content: center;
     align-items: center;
     width: 50%;
+    transition: 200ms linear;
 }
 
 .Square {
