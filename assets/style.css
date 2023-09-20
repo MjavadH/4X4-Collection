@@ -159,9 +159,62 @@ main {
     margin: 0 7px;
 }
 
-/* ---- image ---- */
-.page a .image {
-    border-radius: 1.25rem;
+ /* ------ page ------ */
+/* ---- header ---- */
+.page-card-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--fore-color);
+    box-shadow: 0 25px 20px rgba(100, 100, 100, 0.3);
+}
+
+/* -- Supported devices -- */
+.Supported_devices {
+    width: 53%;
+    height: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    bottom: 20px;
+    z-index: 3;
+    border-radius: 0.45rem;
+    background: var(--background-color);
+}
+
+.Supported_devices::after {
+    content: '';
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    bottom: 10px;
+    right: -15px;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: -6px 5px 0 var(--background-color);
+}
+
+.Supported_devices::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    bottom: 10px;
+    left: -15px;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: 6px 5px 0 var(--background-color);
+}
+
+.Supported_devices .fa {
+    font-weight: 600;
+}
+
+/* -- image -- */
+.page-card a .image {
+    border-radius: 0.85rem 0.85rem 0 0;
     overflow: hidden;
 }
 
@@ -170,7 +223,7 @@ main {
     width: 100%;
     -o-object-fit: cover;
     object-fit: cover;
-    border-radius: 1.25rem;
+    border-radius: 0.85rem 0.85rem 0 0;
     padding: 0;
     background-color: #000;
 }
@@ -185,8 +238,49 @@ img.lazy-image.loaded {
     opacity: 1;
 }
 
-.page a:hover .image .lazy-image {
+.page-card a:hover .image .lazy-image {
     transform: scale(1.2) rotateZ(-5deg);
+}
+
+/* ---- footer ---- */
+.page-card-footer {
+    height: 60px;
+    position: relative;
+    bottom: 30px;
+    z-index: 0;
+    background: var(--background-color);
+    color: var(--fore-color);
+    box-shadow: 0 25px 20px rgba(100, 100, 100, 0.3);
+    border-radius: 0 0 0.85rem 0.85rem;
+}
+
+/* -- Float BTN -- */
+.Float_BTN {
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: -20px;
+    right: 0;
+}
+
+.Float_BTN .BTN {
+    width: 40px;
+    height: 40px;
+    margin: 5px 10px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--fore-color);
+    background: var(--background-color);
+    box-shadow: 0 0 20px rgba(100, 100, 100, 0.3);
+    border-radius: 5px;
+}
+
+.Float_BTN .BTN:hover {
+    color: #0a58ca;
 }
 
 /* ---- Attribute ---- */
@@ -210,4 +304,12 @@ img.lazy-image.loaded {
 
 .Dark .attr_img {
     background-color: #0f0f0f;
+}
+
+.Dark .page-card-footer {
+    box-shadow: 0 15px 15px rgba(20, 20, 20, 0.3);
+}
+
+.Dark .Float_BTN .BTN {
+    box-shadow: 0 0 20px rgba(30, 30, 30, 0.3);
 }
