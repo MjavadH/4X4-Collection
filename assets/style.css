@@ -212,6 +212,21 @@ main {
     font-weight: 600;
 }
 
+/*Full Responsive*/
+.fa.Full {
+    color: rgba(227, 181, 5);
+}
+
+/*Medium Responsive*/
+.fa.Medium {
+    color: rgba(6, 6, 153, 0.8);
+}
+
+/*low Responsive*/
+.fa.low {
+    color: rgba(55, 55, 55, 0.3);
+}
+
 /* -- image -- */
 .page-card a .image {
     border-radius: 0.85rem 0.85rem 0 0;
