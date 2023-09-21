@@ -296,6 +296,7 @@ img.lazy-image.loaded {
 
 .Float_BTN .BTN:hover {
     color: #0a58ca;
+    transform: scale(1.07);
 }
 
 /* ---- Attribute ---- */
