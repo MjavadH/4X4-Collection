@@ -127,7 +127,7 @@ header .line {
 /* Text */
 header h1 {
     position: absolute;
-    font-size: 5vw;
+    font-size: 5vmax;
 }
 
 header h3 {
@@ -159,7 +159,7 @@ main {
     margin: 0 7px;
 }
 
- /* ------ page ------ */
+/* ------ page ------ */
 /* ---- header ---- */
 .page-card-header {
     display: flex;
