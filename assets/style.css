@@ -352,6 +352,10 @@ img.lazy-image.loaded {
     background-color: #0f0f0f;
 }
 
+.Dark .page-card-header {
+    box-shadow: 0 10px 10px rgba(25, 25, 25, 0.8);
+}
+
 .Dark .page-card-footer {
     box-shadow: rgba(17, 17, 17, 0.4) 0 10px 10px;
 }
