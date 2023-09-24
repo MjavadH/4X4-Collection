@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Page 404 Error Zone</title>
+    <!--Style-->
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body id="body">
+<main class="main">
+    <h1>4</h1>
+    <h1 class="X">
+        <span class="caution__tape text"></span>
+        <span class="caution__tape text"></span>
+    </h1>
+    <h1>4</h1>
+</main>
+<section class="background">
+    <a href="../../index.html">
+        <img src="assets/Exit_sign.png" class="Exit_sign" alt="Exit sign">
+    </a>
+    <div id="caution__tape__left" class="caution__tape left">
+        <p class="ERROR">ERROR</p>
+    </div>
+    <div id="caution__tape__center" class="caution__tape center">
+        <p class="PAGE_NOT_FOUND">PAGE NOT FOUND!</p>
+    </div>
+</section>
+<script>
+    let PAGE_NOT_FOUND = document.querySelector(".caution__tape .PAGE_NOT_FOUND")
+    let tape__center = document.getElementById("caution__tape__center")
+    let tape__left = document.getElementById("caution__tape__left")
+    let ERROR = document.querySelector(".caution__tape .ERROR")
+    let body_Width = document.getElementById("body").clientWidth
+    let warning_len = ((body_Width / PAGE_NOT_FOUND.clientWidth) / 1.8) - 1;
+    let caution_len = ((body_Width / ERROR.clientWidth) / 1.8) - 1;
+    for (let i = 0; i < warning_len; i++) {
+        tape__center.innerHTML += PAGE_NOT_FOUND.outerHTML;
+    }
+    for (let i = 0; i < caution_len; i++) {
+        tape__left.innerHTML += ERROR.outerHTML;
+    }
+</script>
+</body>
+</html>

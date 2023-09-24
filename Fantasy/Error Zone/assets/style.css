@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #dfaa4eff;
+    background-image: linear-gradient(147deg, #fdaa4eff 25%, #fac07e 50%, #dfaa4eff 80%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.main h1 {
+    font-size: 10em;
+}
+
+.main h1.X {
+    width: 110px;
+    margin: 0 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caution__tape.text {
+    width: 200%;
+    height: 10px;
+}
+
+.caution__tape.text:nth-child(1) {
+    transform: rotateZ(45deg);
+}
+
+
+.caution__tape.text:nth-child(2) {
+    transform: rotateZ(-45deg);
+}
+
+
+.background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+.Exit_sign{
+    width: 150px;
+    position: absolute;
+    right: -25px;
+    bottom: -25px;
+    transform: rotateZ(-25deg);
+    z-index: 4;
+    -webkit-animation: show_sign 500ms cubic-bezier(0.18, 0.89, 0.32, 1.28) both;
+    -o-animation: show_sign 500ms cubic-bezier(0.18, 0.89, 0.32, 1.28) both;
+    animation: show_sign 500ms cubic-bezier(0.18, 0.89, 0.32, 1.28) both;
+}
+@keyframes show_sign {
+    0% {
+        transform: rotateZ(0);
+    }
+}
+.caution__tape {
+    position: absolute;
+    z-index: 3;
+    width: 105%;
+    height: 40px;
+    user-select: none;
+    background-color: #f8b930;
+    background-image: linear-gradient(#ffb700 0%, #ffc600 100%);
+    color: #0a0a0a;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: bolder;
+    box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
+    border: 1px rgba(0, 0, 0, 0.9) solid;
+}
+
+.caution__tape.center {
+    bottom: 20%;
+    transform: scale(1.5) rotateZ(5deg);
+    -webkit-animation: show_tape_center 500ms cubic-bezier(0.18, 0.89, 0.32, 1.28) both;
+    -o-animation: show_tape_center 500ms cubic-bezier(0.18, 0.89, 0.32, 1.28) both;
+    animation: show_tape_center 500ms cubic-bezier(0.18, 0.89, 0.32, 1.28) both;
+}
+
+.caution__tape.left {
+    top: 10%;
+    left: -20%;
+    transform: rotateZ(-45deg);
+    -webkit-animation: show_tape_left 500ms cubic-bezier(0.18, 0.89, 0.32, 1.28) both;
+    -o-animation: show_tape_left 500ms cubic-bezier(0.18, 0.89, 0.32, 1.28) both;
+    animation: show_tape_left 500ms cubic-bezier(0.18, 0.89, 0.32, 1.28) both;
+}
+
+@keyframes show_tape_left {
+    0% {
+        top: 0;
+    }
+}
+
+@keyframes show_tape_center {
+    0% {
+        bottom: 0;
+    }
+}
+
+@media (max-height: 320px) {
+    .caution__tape.center {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    main h1 {
+        font-size: 7em;
+    }
+}
