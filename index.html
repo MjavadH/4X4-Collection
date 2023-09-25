@@ -16,6 +16,10 @@
 <body id="body" class="mw-100">
 <header class="container-fluid" id="particles-js">
     <div class="GitHubBox">
+        <a id="Download_latest" href="https://github.com/MjavadH/4X4-Collection/releases" class="GitHub-btn GitHub">
+            <span>Download</span>
+            <i class="fa fa-download"></i>
+        </a>
         <a href="https://github.com/MjavadH/4X4-Collection" class="GitHub-btn GitHub">
             <span>GitHub</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="25" viewBox="0 0 50 50">
@@ -1006,6 +1010,7 @@
 
     window.addEventListener('scroll', lazyLoad);
     window.addEventListener('resize', lazyLoad);
+
     /*----- Auto dark mode ----- */
     let now = new Date();
     let hours = now.getHours();
@@ -1013,6 +1018,7 @@
     if (hours >= 20 || hours <= 8) {
         body.classList.add("Dark")
     }
+
     /*----- Get GitHub Star Count ----- */
     function getStarCount(user, repo) {
         let request = new XMLHttpRequest();
@@ -1029,6 +1035,20 @@
         request.send();
     }
     getStarCount("MjavadH", "4X4-Collection");
+
+    /*----- Get latest version ----- */
+    function Get_latest(user, repo) {
+        let request = new XMLHttpRequest();
+        request.open("GET", "https://api.github.com/repos/" + user + "/" + repo + "/releases");
+        request.onload = function() {
+            if (request.status === 200) {
+                let response = JSON.parse(request.responseText);
+                document.getElementById("Download_latest").href = response[0].zipball_url
+            }
+        };
+        request.send();
+    }
+    Get_latest("MjavadH", "4X4-Collection");
 
 </script>
 </body>
