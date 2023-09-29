@@ -51,6 +51,11 @@ main {
     margin: 0 10px;
     font-size: 7em;
 }
+
+.Pixelated-image {
+    width: 1.6em;
+}
+
 /*Description style*/
 .description {
     letter-spacing: 3px;
