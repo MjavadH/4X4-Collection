@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+    overflow: hidden !important;
+    background: rgb(135, 206, 250);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 14em;
+    color: rgba(0, 128, 255, 1);
+    user-select: none;
+}
+
+.X {
+    margin: 0 2rem;
+    z-index: 2;
+    color: rgb(135, 206, 250);
+    text-shadow: rgb(110, 168, 204) 4px 0;
+}
+
+.Cloud {
+    width: 350px;
+    position: absolute;
+    -webkit-animation: Cloud 3s linear infinite;
+    -o-animation: Cloud 3s linear infinite;
+    animation: Cloud 3s linear infinite;
+}
+
+@keyframes Cloud {
+    0% {
+        transform: none;
+    }
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 20vw;
+    }
+
+    .X {
+        margin: 0 3rem;
+    }
+
+    .Cloud {
+        width: 30vw;
+    }
+}
+@media (max-width: 768px) {
+    h1 {
+        font-size: 12em;
+    }
+
+    .X {
+        margin: 0 1rem;
+    }
+
+    .Cloud {
+        width: 250px;
+    }
+}
+
+@media (max-width: 412px) {
+    h1 {
+        font-size: 10em;
+    }
+
+    .X {
+        margin: 0 0.5rem;
+    }
+
+    .Cloud {
+        width: 220px;
+    }
+}
+
+@media (max-width: 300px) {
+    h1 {
+        font-size: 8em;
+    }
+
+    .X {
+        margin: 0 0.225rem;
+    }
+
+    .Cloud {
+        width: 180px;
+    }
+}
