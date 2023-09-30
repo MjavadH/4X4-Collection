@@ -73,15 +73,16 @@ main {
 @media (max-width: 768px) {
     .text_404 h1 {
         margin: 0 3px;
-        font-size: 4rem;
+        font-size: 5em;
     }
-    .description{
-        font-size: 0.8rem;
+
+    .description {
+        font-size: 0.6em;
     }
-    .back-link{
-        font-size: 0.6rem;
+
+    .back-link {
+        font-size: 0.6em;
     }
-    .Pixelated-image{
-        width: 120px;
+}
     }
 }
