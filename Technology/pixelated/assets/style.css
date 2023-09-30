@@ -66,8 +66,10 @@ main {
 .back-link {
     letter-spacing: 2px;
     text-align: center;
-    margin: 10px 0;
+    margin: 15px 0;
     font-size: 0.8rem;
+    text-decoration: none;
+}
 }
 
 @media (max-width: 768px) {
