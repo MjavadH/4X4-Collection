@@ -99,5 +99,18 @@ main {
         font-size: 0.6em;
     }
 }
+
+@media (max-width: 300px) {
+    .text_404 h1 {
+        margin: 0;
+        font-size: 4em;
+    }
+
+    .description {
+        font-size: 0.5em;
+    }
+
+    .back-link {
+        font-size: 0.5em;
     }
 }
