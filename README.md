@@ -158,3 +158,8 @@ Simple 404 collection for use in personal and commercial projects
       <summary>image</summary>
       <img src="https://github.com/MjavadH/4X4-Collection/blob/master/Minimal/Cloud/Image.png">
       </details>
+- Snow Day [preview](https://mjavadh.github.io/4X4-Collection/Minimal/Snow%20Day/index.html)
+      <details>
+      <summary>image</summary>
+      <img src="https://github.com/MjavadH/4X4-Collection/blob/master/Minimal/Snow%20Day/Image.png">
+      </details>
