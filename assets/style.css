@@ -144,7 +144,7 @@ main {
 .categories-title {
     background: #f9fff6;
     color: var(--fore-color);
-    z-index: 1;
+    z-index: 5;
     position: sticky;
     top: 0;
 }
