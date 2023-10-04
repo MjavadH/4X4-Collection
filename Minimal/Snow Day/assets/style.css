@@ -34,6 +34,10 @@ body {
     width: 20vmax;
 }
 
+.snowman-hat {
+    fill: #ef8200; /* snowman hat color */
+}
+
 .snow_hill {
     width: 115%;
     height: 40%;
