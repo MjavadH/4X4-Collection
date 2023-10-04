@@ -31,6 +31,9 @@ function createSnowflake() {
     // Choose a random size between 10 and 30 pixels for the snowflake
     let size = random(10, 30);
 
+    // Pick a random opacity for the snowflake
+    let opacity = Math.random();
+
     // Returns an object with snowflake properties
     return {
         char: char,
@@ -39,6 +42,7 @@ function createSnowflake() {
         x: x,
         y: y,
         size: size,
+        number: opacity
     };
 }
 
@@ -73,9 +77,10 @@ function draw() {
         // Get the current snowflake
         let flake = flakes[i];
 
-        // Setting the color and size of the pen to draw a snowflake
+        // Setting the color and size and opacity of the pen to draw a snowflake
         ctx.fillStyle = flake.color;
         ctx.font = flake.size + "px Arial";
+        ctx.opacity = flake.opacity;
 
         // Draw a snowflake using the fillText method
         ctx.fillText(flake.char, flake.x, flake.y);
