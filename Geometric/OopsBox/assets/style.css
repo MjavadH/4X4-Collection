@@ -71,6 +71,12 @@ body {
     border-bottom: 4px solid #ff0562;
 }
 
+@media (max-height: 320px) {
+    #container .content p {
+        display: none;
+    }
+}
+
 @media (max-width: 768px) {
     #container {
         top: 5%;
