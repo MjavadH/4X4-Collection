@@ -19,7 +19,7 @@ body {
     font-family: "Vazirmatn", sans-serif;
     background-color: #001833 !important;
     color: rgba(255, 255, 255, 0.8);
-    overflow: hidden !important;
+    overflow: hidden;
 }
 
 i {
@@ -141,6 +141,10 @@ a {
 }
 
 @media (max-width: 768px) {
+    body {
+        overflow: auto;
+    }
+
     .polygonC, .polygonS {
         visibility: hidden;
     }
