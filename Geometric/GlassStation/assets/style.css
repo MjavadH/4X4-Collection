@@ -159,3 +159,9 @@ a {
     }
 }
 
+
+@media (max-width: 300px) {
+    .error404 {
+        font-size: 5em;
+    }
+}
