@@ -33,7 +33,6 @@ body {
 .text__404 {
     font-size: 10em;
     display: inline-flex;
-    font-family: Tahoma, sans-serif;
     -webkit-text-stroke: 2px #068299;
 }
 
