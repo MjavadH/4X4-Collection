@@ -154,8 +154,12 @@ a {
         height: 600px;
     }
 
+    .content {
+        padding: 5px;
+    }
+
     .error404 {
-        font-size: 90px;
+        font-size: 8em;
     }
 
     .content p {
