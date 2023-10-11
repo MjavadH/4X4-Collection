@@ -56,11 +56,11 @@ body {
 
 @keyframes Wave-animation {
     0%, 100% {
-        transform: translateY(-50px) skewY(-2deg);
+        transform: translateY(-50px);
 
     }
     50% {
-        transform: translateY(50px) skew(2deg) skewY(2deg);
+        transform: translateY(50px);
     }
 }
 
