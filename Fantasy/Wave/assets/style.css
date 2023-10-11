@@ -93,7 +93,7 @@ body {
     margin: 0 .5rem;
     text-decoration: none;
     color: #000;
-    transition: background-color .5s;
+    transition: 0.5s linear;
 }
 
 .link__404 a:hover {
