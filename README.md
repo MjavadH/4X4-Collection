@@ -131,6 +131,11 @@ Simple 404 collection for use in personal and commercial projects
       <summary>image</summary>
       <img src="https://github.com/MjavadH/4X4-Collection/blob/master/Fantasy/MyHeart/Image.png">
       </details>
+- Bug [preview](https://mjavadh.github.io/4X4-Collection/Fantasy/Bug/index.html)
+      <details>
+      <summary>image</summary>
+      <img src="https://github.com/MjavadH/4X4-Collection/blob/master/Fantasy/Bug/Image.png">
+      </details>
       
 ### Minimal
 - See [preview](https://mjavadh.github.io/4X4-Collection/Minimal/See/index.html)
