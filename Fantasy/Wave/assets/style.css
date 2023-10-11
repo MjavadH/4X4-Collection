@@ -33,7 +33,7 @@ body {
 .text__404 {
     font-size: 10em;
     display: inline-flex;
-    -webkit-text-stroke: 2px #068299;
+    text-shadow: #068299 -8px 0;
 }
 
 .text__404 h1:nth-child(1) {
