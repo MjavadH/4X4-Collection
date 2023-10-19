@@ -1,0 +1,116 @@
+/*Add Simplicity font */
+@font-face {
+    font-family: 'Sterilict';
+    src: url('sterilict-font/Sterilict-L3aen.ttf') format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --LightSaber-color: var(--Green);
+    --Green: #00FF00;
+    --Blue: #3C9BDF;
+    --red: #EB212E;
+    --pruple: #A800FF;
+    --Pink: #FFC0CB;
+    --orange: #FFA500;
+    --yellow: #FFFF00;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden !important;
+    background-color: rgb(14, 14, 14);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset var(--LightSaber-color) 0 0 30px;
+}
+
+.LightSaber {
+    width: 100%;
+    height: 30px;
+    border-radius: 15px;
+    background: #fefefe;
+    box-shadow: inset var(--LightSaber-color) 0 0 10px,
+    inset var(--LightSaber-color) 0 0 20px,
+    var(--LightSaber-color) 0 0 5px,
+    var(--LightSaber-color) 0 0 10px -2px,
+    var(--LightSaber-color) 0 0 20px -4px,
+    var(--LightSaber-color) 0 0 30px -6px,
+    var(--LightSaber-color) 0 0 40px -8px,
+    var(--LightSaber-color) 0 0 50px -10px,
+    var(--LightSaber-color) 0 0 100px,
+    var(--LightSaber-color) 0 0 150px;
+    position: absolute;
+    transform-origin: 100% 100%;
+}
+
+#LightSaber:not(.Second) {
+    bottom: -40px;
+    -webkit-animation: LightSaber 1s ease-in both;
+    -o-animation: LightSaber 1s ease-in both;
+    animation: LightSaber 1s ease-in both;
+}
+
+#LightSaber.Second {
+    right: -30px;
+    top: -30px;
+    transform: rotateZ(-90deg);
+    -webkit-animation: LightSaberSecond 1s ease-in both;
+    -o-animation: LightSaberSecond 1s ease-in both;
+    animation: LightSaberSecond 1s ease-in both;
+}
+
+@keyframes LightSaber {
+    100% {
+        transform: rotateZ(90deg);
+        right: -30px;
+    }
+}
+
+@keyframes LightSaberSecond {
+    100% {
+        right: 110%;
+    }
+}
+
+.T404 h1 {
+    color: #fefefe;
+    font-family: 'Sterilict', 'Poppins', sans-serif;
+    text-shadow: var(--LightSaber-color) 0 0 20px,
+    var(--LightSaber-color) 0 0 40px;
+    font-size: 12em;
+}
+
+@media (min-width: 1024px) {
+    .T404 h1 {
+        font-size: 20vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .T404 h1 {
+        font-size: 8.5em;
+    }
+}
+
+@media (max-width: 412px) {
+    .T404 h1 {
+        font-size: 8em;
+    }
+}
+
+@media (max-width: 300px) {
+    .T404 h1 {
+        font-size: 5.5em;
+    }
+}
