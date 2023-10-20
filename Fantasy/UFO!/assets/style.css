@@ -189,7 +189,7 @@ section .plain .chicken:not(.feed) {
 
     .box_404 .Text_404 {
         width: 100%;
-        justify-content: space-around;
+        justify-content: space-evenly;
     }
 
     .box_404 .UFO {
