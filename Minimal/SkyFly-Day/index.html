@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Page 404 SkyFly-Day</title>
+    <!--Style-->
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<section id="background" class="background">
+</section>
+<section class="T404">
+    <h1>4</h1>
+    <h1 class="X">X</h1>
+    <h1>4</h1>
+</section>
+</body>
+<script>
+    let background = document.getElementById("background");
+    let clouds = [];
+    let cloud_len = 15;
+
+    function CreateCloud(length) {
+        for (let i = 0; i < length; i++) {
+            let Cloud = document.createElement("img");
+            Cloud.className = "Cloud";
+            Cloud.style.top = Random_Position(-10, background.offsetHeight) + "px";
+            Cloud.style.right = -Random_Position(100, 1000) + "px";
+            Cloud.style.width = Random_Position(100, 600) + "px";
+            Cloud.style.zIndex = Random_Position(1, 2);
+            Cloud.src = "./assets/" + Random_Position(1, 5) + ".png";
+            background.appendChild(Cloud)
+            clouds.push(Cloud)
+        }
+    }
+
+    function Cloud_Animation() {
+        for (let i = 0; i < clouds.length; i++) {
+            clouds[i].style.left = (clouds[i].offsetLeft - 25) + "px"
+            if (clouds[i].offsetLeft < -400) {
+                clouds[i].remove()
+                clouds.splice(i, 1);
+                CreateCloud(1)
+            }
+        }
+    }
+
+    CreateCloud(cloud_len)
+    setInterval(Cloud_Animation, 60);
+
+    function Random_Position(min, max) {
+        return Math.floor(Math.random() * (max - (min) + 1)) + (min);
+    }
+</script>
+</html>
