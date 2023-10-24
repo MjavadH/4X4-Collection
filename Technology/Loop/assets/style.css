@@ -11,7 +11,7 @@ body {
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
     overflow: hidden !important;
-    background: repeating-linear-gradient(45deg, #939393 1px, #fff 10px, #eee 15px, #fff 10px);
+    background: repeating-linear-gradient(45deg, #939393 3px, #fff 10px, #eee 15px, #fff 10px);
     display: flex;
     flex-direction: column;
     justify-content: center;
