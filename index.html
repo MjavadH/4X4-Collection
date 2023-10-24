@@ -1232,6 +1232,10 @@
                 document.getElementById("Star").innerHTML = "??";
             }
         };
+        request.onerror = () =>{
+            document.getElementById("Star").innerHTML = "N/A";
+        }
+
         request.send();
     }
     getStarCount("MjavadH", "4X4-Collection");
