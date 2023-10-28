@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Page 404 SkyFly-Night</title>
+    <!--Style-->
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<section id="background" class="background">
+    <svg class="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="190">
+        <path fill="#FCF7CB" d="M64 29A41.5 42 0 1 0 64 113A41.5 42 0 1 0 64 29Z"/>
+        <path fill="#D8D5B2"
+              d="M64,29.5c-2.2,0-4.4,0.2-6.5,0.5c19.9,3.2,35,20.5,35,41.5c0,21-15.2,38.3-35,41.5c2.1,0.3,4.3,0.5,6.5,0.5c22.9,0,41.5-18.8,41.5-42C105.5,48.3,86.9,29.5,64,29.5z"/>
+        <path fill="#454B54"
+              d="M64,116.5c-24.6,0-44.5-20.2-44.5-45s20-45,44.5-45s44.5,20.2,44.5,45S88.6,116.5,64,116.5z M64,32.5c-21.3,0-38.5,17.5-38.5,39s17.3,39,38.5,39s38.5-17.5,38.5-39S85.3,32.5,64,32.5z"/>
+        <path fill="#D8D5B2"
+              d="M56 71.6A7.5 7.5 0 1 0 56 86.6 7.5 7.5 0 1 0 56 71.6zM61 43.5A4 4 0 1 0 61 51.5 4 4 0 1 0 61 43.5zM91 61.5A6 6 0 1 0 91 73.5 6 6 0 1 0 91 61.5z"/>
+    </svg>
+</section>
+<section class="T404">
+    <h1>4</h1>
+    <h1 class="X">X</h1>
+    <h1>4</h1>
+</section>
+</body>
+<script>
+    let background = document.getElementById("background");
+
+    /* ----- Clouds -----*/
+    let clouds = [];
+    let cloud_len = 10;
+
+    function CreateCloud(length) {
+        for (let i = 0; i < length; i++) {
+            let Cloud = document.createElement("img");
+            Cloud.className = "Cloud";
+            Cloud.style.top = Random_Position(-10, background.offsetHeight) + "px";
+            Cloud.style.right = -Random_Position(100, 1000) + "px";
+            Cloud.style.width = Random_Position(100, 600) + "px";
+            Cloud.style.zIndex = Random_Position(1, 2);
+            Cloud.src = "./assets/" + Random_Position(1, 5) + ".png";
+            background.appendChild(Cloud)
+            clouds.push(Cloud)
+        }
+    }
+
+    function Cloud_Animation() {
+        for (let i = 0; i < clouds.length; i++) {
+            clouds[i].style.left = (clouds[i].offsetLeft - 15) + "px"
+            if (clouds[i].offsetLeft < -400) {
+                clouds[i].remove()
+                clouds.splice(i, 1);
+                CreateCloud(1)
+            }
+        }
+    }
+
+    CreateCloud(cloud_len);
+    setInterval(Cloud_Animation, 70);
+    /* ----- Stars ----- */
+    let Stars = ["★", "☆", "⚝", "✩", "✮", "✵", "✹", "⭑", "🟉", "🟊", "🟌", "🟒"]
+    let Stars_color = ["#ffffff", "#ff0000", "#ff8c00", "#ffff00", "#00ff00", "#0000ff", "#ff00ff"]
+
+    function CreateStar(length) {
+        for (let i = 0; i < length; i++) {
+            let Star = document.createElement("p");
+            Star.className = "Star";
+            Star.style.top = Random_Position(-10, background.offsetHeight) + "px";
+            Star.style.left = Random_Position(0, background.offsetWidth) + "px";
+            Star.style.fontSize = Random_Position(1, 10) + "px";
+            Star.style.color = Stars_color[Random_Position(0, Stars_color.length - 1)];
+            Star.style.textShadow = Star.style.color + "0 0 " + Random_Position(3, 20) + "px";
+            Star.innerText = Stars[Random_Position(0, Stars.length - 1)]
+            background.appendChild(Star)
+        }
+    }
+
+    CreateStar(60);
+
+    function Random_Position(min, max) {
+        return Math.floor(Math.random() * (max - (min) + 1)) + (min);
+    }
+</script>
+</html>
