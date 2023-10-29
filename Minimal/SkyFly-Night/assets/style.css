@@ -43,6 +43,7 @@ body {
     align-items: center;
     font-size: 10em;
     color: #fafafa;
+    text-shadow: #fafafa 0 0 10px;
     user-select: none;
 }
 
