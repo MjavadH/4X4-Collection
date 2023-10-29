@@ -15,12 +15,47 @@
     <h1>4X4</h1>
 </section>
 
+<section id="color_picker" class="color-picker">
+    <div class="color active" style="background-color: var(--Green)"></div>
+    <div class="color" style="background-color: var(--Blue)"></div>
+    <div class="color" style="background-color: var(--red)"></div>
+    <div class="color" style="background-color: var(--pruple)"></div>
+    <div class="color" style="background-color: var(--Pink)"></div>
+    <div class="color" style="background-color: var(--orange)"></div>
+    <div class="color" style="background-color: var(--yellow)"></div>
+    <div class="color" style="background-color: var(--white)"></div>
+    <div class="color" style="background-color: var(--black)"></div>
+    <div id="show_btn" class="show-btn"><span> > </span></div>
+</section>
+
 <!--Script-->
 <script type="text/javascript">
     let LightSaber = document.getElementById("LightSaber");
     if (window.outerHeight > window.outerWidth) {
         LightSaber.classList.add("Second")
         LightSaber.style.width = window.outerHeight + "px"
+    }
+
+    /* color-picker */
+    let color_picker = document.getElementById("color_picker");
+    let colors = document.getElementsByClassName("color");
+    let show_btn = document.getElementById("show_btn");
+    show_btn.onclick = () => {
+        color_picker.classList.toggle("show")
+    }
+    for (let i = 0; i < colors.length; i++) {
+        colors[i].addEventListener("click", () => {
+            for (let g = 0; g < colors.length; g++) {
+                colors[g].className = "color";
+            }
+            colors[i].className = "color active";
+            document.querySelector(':root').style.setProperty('--LightSaber-color', colors[i].style.backgroundColor);
+            let animationName = getComputedStyle(LightSaber).animationName;
+            LightSaber.style.animationName = "none";
+            setTimeout(function () {
+                LightSaber.style.animationName = animationName;
+            }, 100);
+        })
     }
 </script>
 </body>
