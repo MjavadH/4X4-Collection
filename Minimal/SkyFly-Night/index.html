@@ -32,7 +32,7 @@
 
     /* ----- Clouds -----*/
     let clouds = [];
-    let cloud_len = 10;
+    let cloud_len = window.innerWidth >= 768 ? 14 : 7;
 
     function CreateCloud(length) {
         for (let i = 0; i < length; i++) {
