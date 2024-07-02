@@ -8,7 +8,6 @@ body {
     height: 100vh;
     font-size: 16px;
     font-family: Poppins, sans-serif;
-    overflow: hidden !important;
     background: rgb(235, 235, 235);
     display: flex;
     justify-content: space-around;
@@ -43,11 +42,13 @@ body {
     }
 
     .T404 {
-        font-size: 9vmax;
+        font-size: 5em;
     }
 
     .paragraph {
-        width: 80%;
+        width: 100%;
+        padding: 1.2rem;
+        margin-bottom: 0.5rem;
     }
 }
 
@@ -57,16 +58,12 @@ body {
     }
 
     .T404 {
-        font-size: 8em;
+        font-size: 4em;
     }
 }
 
 @media (max-width: 300px) {
-    .bug {
-        margin: 0;
-    }
-
     .T404 {
-        font-size: 7em;
+        font-size: 3em;
     }
 }
