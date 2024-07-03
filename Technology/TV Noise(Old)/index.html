@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Page 404 TV Noise(Old)</title>
+    <!--Style-->
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<canvas id="canvas"></canvas>
+<h1 class="T404">4 X 4</h1>
+<p class="paragraph">Oops! page not found </p>
+<script>
+    let canvas = document.getElementById("canvas");
+    let ctx = canvas.getContext("2d");
+
+    function resize() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    }
+
+    function draw() {
+        ctx.fillStyle = "black";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        let imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+        let data = imageData.data;
+        for (let i = 0; i < data.length; i += 4) {
+            let color = Math.random() * 255;
+            data[i] = color; // red
+            data[i + 1] = color; // green
+            data[i + 2] = color; // blue
+            data[i + 3] = 255; // alpha
+        }
+        ctx.putImageData(imageData, 0, 0);
+        requestAnimationFrame(draw);
+    }
+
+    resize();
+    draw();
+    window.addEventListener("resize", resize);
+</script>
+</body>
+</html>
