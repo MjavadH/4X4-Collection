@@ -52,7 +52,12 @@ Simple 404 collection for use in personal and commercial projects
       <summary>image</summary>
       <img src="https://github.com/MjavadH/4X4-Collection/blob/master/Technology/PowerShell/Image.png">
       </details>
-    
+- Loop [preview](https://mjavadh.github.io/4X4-Collection/Technology/Loop/index.html)
+      <details>
+      <summary>image</summary>
+      <img src="https://github.com/MjavadH/4X4-Collection/blob/master/Technology/Loop/Image.png">
+      </details>
+      
 ### Geometric
 - Abstract [preview](https://mjavadh.github.io/4X4-Collection/Geometric/Abstract/index.html)
       <details>
@@ -83,11 +88,6 @@ Simple 404 collection for use in personal and commercial projects
       <details>
       <summary>image</summary>
       <img src="https://github.com/MjavadH/4X4-Collection/blob/master/Geometric/Square/Image.png">
-      </details>
-- Loop [preview](https://mjavadh.github.io/4X4-Collection/Technology/Loop/index.html)
-      <details>
-      <summary>image</summary>
-      <img src="https://github.com/MjavadH/4X4-Collection/blob/master/Technology/Loop/Image.png">
       </details>
 
 ### Fantasy 
