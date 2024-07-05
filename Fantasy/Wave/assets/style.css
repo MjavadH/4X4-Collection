@@ -16,7 +16,7 @@ body {
 .main__404 {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100dvh;
 }
 
 .box__404 {

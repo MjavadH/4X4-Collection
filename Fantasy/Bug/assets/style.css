@@ -5,7 +5,7 @@
 }
 
 body {
-    height: 100vh;
+    height: 100dvh;
     font-size: 16px;
     font-family: Poppins, sans-serif;
     background: rgb(235, 235, 235);

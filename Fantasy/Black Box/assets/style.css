@@ -14,7 +14,7 @@
 body {
     overflow-x: hidden;
     font-size: 14px;
-    height: 100vh;
+    height: 100dvh;
     font-family: 'Poppins', sans-serif;
     background-color: #000000;
     background-image: linear-gradient(147deg, #000000 0%, #0f0f0f 74%);

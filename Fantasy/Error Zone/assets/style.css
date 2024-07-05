@@ -10,7 +10,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #dfaa4eff;
     background-image: linear-gradient(147deg, #fdaa4eff 25%, #fac07e 50%, #dfaa4eff 80%);
-    height: 100vh;
+    height: 100dvh;
     display: flex;
     justify-content: center;
     align-items: center;

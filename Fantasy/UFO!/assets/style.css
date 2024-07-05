@@ -59,7 +59,7 @@ body {
 section {
     position: absolute;
     width: 100%;
-    height: 100vh;
+    height: 100dvh;
     min-height: 600px;
     overflow: hidden;
     z-index: 0;

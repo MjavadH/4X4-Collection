@@ -14,7 +14,7 @@
 }
 
 body {
-    min-height: 100vh;
+    min-height: 100dvh;
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
     display: flex;
