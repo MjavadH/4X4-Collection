@@ -1,0 +1,275 @@
+/* Source code: https://codepen.io/shshaw/pen/jOMdaL */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100dvh;
+    color: #FFF;
+    background-color: #FD940A;
+    background-image: radial-gradient(circle, #F9A72B 0%, #FA9026 70%, #FB6C1F 100%);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+#text404 {
+    font-size: 10em;
+    z-index: 2;
+}
+
+#Clouds {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    height: 30%;
+    overflow: hidden;
+    animation: FadeIn 3.1s ease-out;
+    user-select: none;
+}
+
+@keyframes FadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.Cloud {
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    animation: Float 120s linear infinite, FadeFloat 120s linear infinite;
+    z-index: 1;
+}
+
+.Cloud.Foreground {
+    height: 10%;
+    min-height: 20px;
+    z-index: 3;
+}
+
+.Cloud.Background {
+    height: 9.09%;
+    min-height: 8px;
+    animation-duration: 210s;
+    z-index: 1;
+}
+
+@keyframes Float {
+    from {
+        transform: translateX(100%) translateZ(0);
+    }
+    to {
+        transform: translateX(-15%) translateZ(0);
+    }
+}
+
+@keyframes FadeFloat {
+    0%, 100% {
+        opacity: 0;
+    }
+    5%, 90% {
+        opacity: 1;
+    }
+}
+
+.Cloud:nth-child(10) {
+    animation-delay: -184.61538462s;
+    top: 60%;
+}
+
+.Cloud.Foreground:nth-child(10) {
+    animation-duration: 80s;
+    height: 35%;
+}
+
+.Cloud.Background:nth-child(10) {
+    animation-duration: 110s;
+}
+
+/* Repeat similar structure for other clouds with nth-child(9) to nth-child(1) */
+.Cloud:nth-child(9) {
+    animation-delay: -166.15384615s;
+    top: 54%;
+}
+
+.Cloud.Foreground:nth-child(9) {
+    animation-duration: 84s;
+    height: 32.5%;
+}
+
+.Cloud.Background:nth-child(9) {
+    animation-duration: 114s;
+}
+
+.Cloud:nth-child(8) {
+    animation-delay: -147.69230769s;
+    top: 48%;
+}
+
+.Cloud.Foreground:nth-child(8) {
+    animation-duration: 88s;
+    height: 30%;
+}
+
+.Cloud.Background:nth-child(8) {
+    animation-duration: 118s;
+}
+
+.Cloud:nth-child(7) {
+    animation-delay: -129.23076923s;
+    top: 42%;
+}
+
+.Cloud.Foreground:nth-child(7) {
+    animation-duration: 92s;
+    height: 27.5%;
+}
+
+.Cloud.Background:nth-child(7) {
+    animation-duration: 122s;
+    height: 0.34%;
+}
+
+.Cloud:nth-child(6) {
+    animation-delay: -110.76923077s;
+    top: 36%;
+}
+
+.Cloud.Foreground:nth-child(6) {
+    animation-duration: 96s;
+    height: 25%;
+}
+
+.Cloud.Background:nth-child(6) {
+    animation-duration: 126s;
+    height: 1.59%;
+}
+
+.Cloud:nth-child(5) {
+    animation-delay: -92.30769231s;
+    top: 30%;
+}
+
+.Cloud.Foreground:nth-child(5) {
+    animation-duration: 100s;
+    height: 22.5%;
+}
+
+.Cloud.Background:nth-child(5) {
+    animation-duration: 130s;
+    height: 2.84%;
+}
+
+.Cloud:nth-child(4) {
+    animation-delay: -73.84615385s;
+    top: 24%;
+}
+
+.Cloud.Foreground:nth-child(4) {
+    animation-duration: 104s;
+    height: 20%;
+}
+
+.Cloud.Background:nth-child(4) {
+    animation-duration: 134s;
+    height: 4.09%;
+}
+
+.Cloud:nth-child(3) {
+    animation-delay: -55.38461538s;
+    top: 18%;
+}
+
+.Cloud.Foreground:nth-child(3) {
+    animation-duration: 108s;
+    height: 17.5%;
+}
+
+.Cloud.Background:nth-child(3) {
+    animation-duration: 138s;
+    height: 5.34%;
+}
+
+.Cloud:nth-child(2) {
+    animation-delay: -36.92307692s;
+    top: 12%;
+}
+
+.Cloud.Foreground:nth-child(2) {
+    animation-duration: 112s;
+    height: 15%;
+}
+
+.Cloud.Background:nth-child(2) {
+    animation-duration: 142s;
+    height: 6.59%;
+}
+
+.Cloud:nth-child(1) {
+    animation-delay: -18.46153846s;
+    top: 6%;
+}
+
+.Cloud.Foreground:nth-child(1) {
+    animation-duration: 116s;
+    height: 12.5%;
+}
+
+.Cloud.Background:nth-child(1) {
+    animation-duration: 146s;
+    height: 7.84%;
+}
+
+.Cloud {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKQAAABgCAYAAACTzNnjAAAFCklEQVR42u3d34uVRRjA8YMsEi0iSwhdRBGhSJgZiNRFIkWhQVEXBipKUVBBLCF6k0h4UxFkBLq4QT/Qiyi80EgxCjXMWqOMtqy0bBNja92yXatN3c3pGc9sHU/v+X3emWfe93vx+QN23u+e95x5Z94pmNWFQo5NEytErzgoBsSIOCf+FqbEBTEhzophcVTsFxvFEjE152PZHGMukbcB6BAPij0uqgtl0bXCBvyjeFPcS2wEWc0y0ec++Ywnf7rwbyc8grQ6RY8Y9RhhJT+Jde4TmghzFuR08bo4ryDEpE/N58QUYsx+kFPcD4yzCkMsZz+1uwkyu0HeKYYiCLHcN2I2QWYnSPudbHubfy37NuFu4wQZeZD2k2Uw4hDLHRZdBBnnH3K/5ykcX86IeQQZl6civ0XXYv/RlhJkHLZkOMTypz7dBKnbyzmJsfTZeTdB6vRszmIsjXI5QeryWMa/M9ZinzjdTJA63CLGcxzjpD/ElQQZfq3iKDFe8lSHIAPqI8L/6SHIMB4nvorTQQsI0v+teoz4KjpBkH7tIrqaNhCkH9cnbK5C8q/uywiSHzKabCLIdM3K+QR4o8YysfVWcZDvElnD1hNkOi5XuilLu5MlOyzni3vESnGfWCRuIMjm1zgSWPM7GWvNXdonXkdM8Q0dCwmytu8Iy/vK9B3iRoJMnghnqifc8jb7yXkXQf5nLWGo2WR2HUGuLrxPDKq25D6d9yBPE4I6/e6rVO6CnMpkuFq/eLmFKwtyMRde/dOg2XkKkvlH/X5P9ZNSWZBvcMGjMJza6iJlQe7nYkfjozwE+TkXOiprsx7kES5yVOzLYK/IcpA/cJGj806Wg/yaCxzlzsersxpkPxc4SruzGuQBLm603yU7DPOQUOSJWIK0E6j2lcvPm+JJVp+674oDbiFuv5t/fEXs5cJG65DmIO3KY3vG3yCLbXO1N1xVkB3uWfQQFye3rtUS5DN1bC5C9j0cOki7XOwUFwJOb6gg7TmCW1lMizI7QwQ5nW2qqGCv7yDtwsxfGXhU0OczyKvECIOOKvb5CnKa2+TDoKOat3wFyaIH1ONFH0H2MNCo00NpBzmXR39owIy0gzzOIKNOv6X9LHsZg4wGp3xsM/ZMoUfF3aaZ4++qBDnIIKMNzrsHKb11Lb6oEORtDCRSYB81f+vWxzYUJBv2kTYb5vx6gzzHgMHTjsUXagV5BwMFzz78d5NYQpDbGCAEcOzissaEIL9kcBDIx0lBsrwMIW0uD3KcQUHgqaEFpUGyLQGhnSgNkgGBBg8QJDQ5Phkky82g5bvkNQXDscDQY6MNcpiBgBL9NsjDDAS0LPq1Qb7EQECJicLFSUkGAkpMLgMaYzCgKci3GQxomPqZDPImBgMa9uOULifnDWcI7VRpkIsYEAR2sHwX2GcMCgJak/QKPh4lIsgcpOhM2iv7JIODAPqqvY7vPQYInlf6zKsWpN2iOMBAwZMD9bzSudPwvh+kr3gofJ0vve/ikxIp36pXNHosiD2j5gMGD2ksyG3lJK917qc5A4l2eNW04Wi5OaZ41DADilZu0xtMmw/fXCV+ZnDRoFFTfBdpaudlLxVfsXMRNYy7W3SH8XSAu/01bo8s/kL8xQWAM+JC7DIeDnCvZqZ4RGxxi3/3iUPOJ+5TtRXfG/v6jeadNMVjlqsZquG0uwU164ybg2vFuPuh2ax23tkm3N91VLwmbjVNvPT+H7Ro4730ITNPAAAAAElFTkSuQmCC);
+}
+
+.Cloud.Background {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEoAAAAqCAYAAAAUJM0rAAACFUlEQVRo3u3aPSwDYRzH8UZEbAYiYrDYjLZGpIPBJLGwSKwi0k1iYBKDdFJsEiMxSZgsFZJGiGjqJWEhSKuaNKRUG8r5PfI8SXOud72+PH2eu2f47Ndv7+V5/nee/G6bh5MWmIV9iEMWvkGjfiADD7AHk9BU6+PSNK0kPAINwwXkC6KU6gvC4HVyKB/clhHHCDnbTqHbSaEaYIv+OK3KyBk274RQrXBXg0B6B/QPkTIUiZTiEIm5gkbZQjXTJ5nG2ZFsocJ1iMQEZQk1VcdIGl2L9Yoeitwj3uocirgRPVRAgEjMoMihkgKFStIzK063QVHYhKF6h/IKFMlKGpaNlhM8Qq1JFIp5gQHeoSIShmJPST/PUElJQ7FN9hivUGmJQxE56OQRKiN5qL/NNY9QKQeEIpdgR7VC9cEqHeGeUyEHXHrMUiWhyKx6BV4dEsNMtNxQI4Ls33h5LidUoEYjXKEXoXZDLbgsEBOzE8qne8fmJhE7oWIujUQcwhyMmy0VSKRRF0cyWlclYMYo1LEKZOgRugpDpVWUot5ZLI8LlwN23bNQKoY1vwpVmmsS6kOFsPRJQl2qENZIqGkVwnp9xb5nUksEcxm2hZlQMcy3OYXTgx0VpOi2pl8/jwqpMP9sF5twBl08ctE7I/dws5l5D5y4OBj51HvdzluYdlik0RL06cjkKpSlB1Span5x/AQb5Hfrxyy/oU5ISeVw53AAAAAASUVORK5CYII=);
+}
+
+@media (min-width: 1440px) {
+    #text404 {
+        font-size: 15em;
+    }
+}
+
+@media (max-width: 768px) {
+    #text404 {
+        font-size: 6em;
+    }
+}
+
+@media (max-width: 412px) {
+    #text404 {
+        font-size: 4em;
+    }
+}
+
+@media (max-width: 300px) {
+    #text404 {
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 200px) {
+    #text404 {
+        font-size: 2em;
+    }
+}
