@@ -83,6 +83,9 @@ Black Box             |  Error Zone             |  MyHeart
 [![](https://github.com/MjavadH/4X4-Collection/blob/master/Fantasy/Black%20Box/Image.png)](https://mjavadh.github.io/4X4-Collection/Fantasy/Black%20Box/index.html)  | [![](https://github.com/MjavadH/4X4-Collection/blob/master/Fantasy/Error%20Zone/Image.png)](https://mjavadh.github.io/4X4-Collection/Fantasy/Error%20Zone/index.html)  | [![](https://github.com/MjavadH/4X4-Collection/blob/master/Fantasy/MyHeart/Image.png)](https://mjavadh.github.io/4X4-Collection/Fantasy/MyHeart/index.html)
 Bug             |  Simple Two Column             |  Floating Cloud
 [![](https://github.com/MjavadH/4X4-Collection/blob/master/Fantasy/Bug/Image.png)](https://mjavadh.github.io/4X4-Collection/Fantasy/Bug/index.html)  | [![](https://github.com/MjavadH/4X4-Collection/blob/master/Fantasy/Simple_Two_Column/Image.png)](https://mjavadh.github.io/4X4-Collection/Fantasy/Simple_Two_Column/index.html)  | [![](https://github.com/MjavadH/4X4-Collection/blob/master/Fantasy/Floating%20Cloud/Image.png)](https://mjavadh.github.io/4X4-Collection/Fantasy/Floating%20Cloud/index.html)
+Snow Day             |               |  
+[![](https://github.com/MjavadH/4X4-Collection/blob/master/Fantasy/Snow%20Day/Image.png)](https://mjavadh.github.io/4X4-Collection/Fantasy/Snow%20Day/index.html)
+
 
 ### Minimal
 See             |  Patch             |  Black & White
@@ -90,10 +93,8 @@ See             |  Patch             |  Black & White
 [![](https://github.com/MjavadH/4X4-Collection/blob/master/Minimal/See/Image.png)](https://mjavadh.github.io/4X4-Collection/Minimal/See/index.html)  | [![](https://github.com/MjavadH/4X4-Collection/blob/master/Minimal/Patch/Image.png)](https://mjavadh.github.io/4X4-Collection/Minimal/Patch/index.html)  | [![](https://github.com/MjavadH/4X4-Collection/blob/master/Minimal/Black&White//Image.png)](https://mjavadh.github.io/4X4-Collection/Minimal/Black&White/index.html)
 Hole             |  Shooting Range             |  Cloud
 [![](https://github.com/MjavadH/4X4-Collection/blob/master/Minimal/Hole/Image.png)](https://mjavadh.github.io/4X4-Collection/Minimal/Hole/index.html)  | [![](https://github.com/MjavadH/4X4-Collection/blob/master/Minimal/Shooting%20Range/Image.png)](https://mjavadh.github.io/4X4-Collection/Minimal/Shooting%20Range/index.html)  | [![](https://github.com/MjavadH/4X4-Collection/blob/master/Minimal/Cloud//Image.png)](https://mjavadh.github.io/4X4-Collection/Minimal/Cloud/index.html)
-Snow Day             |  LightSaber             |  SkyFly-Day
-[![](https://github.com/MjavadH/4X4-Collection/blob/master/Minimal/Snow%20Day/Image.png)](https://mjavadh.github.io/4X4-Collection/Minimal/Snow%20Day/index.html)  | [![](https://github.com/MjavadH/4X4-Collection/blob/master/Minimal/LightSaber/Image.png)](https://mjavadh.github.io/4X4-Collection/Minimal/LightSaber/index.html)  | [![](https://github.com/MjavadH/4X4-Collection/blob/master/Minimal/SkyFly-Day//Image.png)](https://mjavadh.github.io/4X4-Collection/Minimal/SkyFly-Day/index.html)
-SkyFly-Night             |               |  
-[![](https://github.com/MjavadH/4X4-Collection/blob/master/Minimal/SkyFly-Night/Image.png)](https://mjavadh.github.io/4X4-Collection/Minimal/SkyFly-Night/index.html)
+LightSaber             |  SkyFly-Day           | SkyFly-Night
+[![](https://github.com/MjavadH/4X4-Collection/blob/master/Minimal/LightSaber/Image.png)](https://mjavadh.github.io/4X4-Collection/Minimal/LightSaber/index.html)  | [![](https://github.com/MjavadH/4X4-Collection/blob/master/Minimal/SkyFly-Day//Image.png)](https://mjavadh.github.io/4X4-Collection/Minimal/SkyFly-Day/index.html)  | [![](https://github.com/MjavadH/4X4-Collection/blob/master/Minimal/SkyFly-Night/Image.png)](https://mjavadh.github.io/4X4-Collection/Minimal/SkyFly-Night/index.html)
 
 
 ## Contributing
