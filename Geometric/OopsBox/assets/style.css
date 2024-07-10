@@ -9,7 +9,7 @@
 body {
     font-family: sans-serif;
     background: linear-gradient(45deg, #8500ff, #5acaff);
-    height: 100vh;
+    height: 100dvh;
 }
 
 #container {
