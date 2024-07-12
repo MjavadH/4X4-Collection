@@ -20,7 +20,7 @@ a{text-decoration: none;}
 
 .container {
   width: 100%;
-  height: 100vh;
+  min-height: 100dvh;
   overflow: hidden !important;
   display: flex;
   flex-direction: column;
