@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Page 404 TV Noise(Static)</title>
+    <!--Style-->
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<canvas id="canvas"></canvas>
+<h1 class="T404">4 X 4</h1>
+<p class="paragraph">Oops! page not found </p>
+<script>
+    const canvas = document.getElementById("canvas");
+    let ctx = canvas.getContext("2d");
+
+    function resize() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        draw();
+    }
+
+    function draw() {
+        ctx.fillStyle = "black";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        const colors = ["#FFC800", "#00FF00", "#0000FF", "#FF00FF", "#FF0000", "#FFFFFF", "#000000"]; // color bars
+        let barWidth = canvas.width / colors.length; // width of each bar
+        for (let i = 0; i < colors.length; i++) {
+            ctx.fillStyle = colors[i]; // fill color
+            ctx.fillRect(i * barWidth, 0, barWidth, canvas.height); // draw bar
+        }
+    }
+
+    resize();
+    draw();
+    window.addEventListener("resize", resize);
+</script>
+</body>
+</html>
