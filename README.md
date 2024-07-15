@@ -63,8 +63,8 @@ pixelated             |  Neon             |  CMD
 [![](https://github.com/MjavadH/4X4-Collection/blob/master/Technology/pixelated/Image.png)](https://mjavadh.github.io/4X4-Collection/Technology/pixelated/index.html)  | [![](https://github.com/MjavadH/4X4-Collection/blob/master/Technology/Neon/Image.png)](https://mjavadh.github.io/4X4-Collection/Technology/Neon/index.html)  | [![](https://github.com/MjavadH/4X4-Collection/blob/master/Technology/CMD/Image.png)](https://mjavadh.github.io/4X4-Collection/Technology/CMD/index.html)
 Ubuntu             |  PowerShell             |  Loop
 [![](https://github.com/MjavadH/4X4-Collection/blob/master/Technology/Ubuntu/Image.png)](https://mjavadh.github.io/4X4-Collection/Technology/Ubuntu/index.html)  | [![](https://github.com/MjavadH/4X4-Collection/blob/master/Technology/PowerShell/Image.png)](https://mjavadh.github.io/4X4-Collection/Technology/PowerShell/index.html)  | [![](https://github.com/MjavadH/4X4-Collection/blob/master/Technology/Loop/Image.png)](https://mjavadh.github.io/4X4-Collection/Technology/Loop/index.html)
-TV Noise(Old)
-[![](https://github.com/MjavadH/4X4-Collection/blob/master/Technology/TV%20Noise(Old)/Image.png)](https://mjavadh.github.io/4X4-Collection/Technology/TV%20Noise(Old)/index.html)
+TV Noise(Old)             |  TV Noise(Static)
+[![](https://github.com/MjavadH/4X4-Collection/blob/master/Technology/TV%20Noise(Old)/Image.png)](https://mjavadh.github.io/4X4-Collection/Technology/TV%20Noise(Old)/index.html)  | [![](https://github.com/MjavadH/4X4-Collection/blob/master/Technology/TV%20Noise(Static)/Image.png)](https://mjavadh.github.io/4X4-Collection/Technology/TV%20Noise(Static)/index.html)
 
 ### Geometric
 Abstract             |  CircleBeat             |  OopsBox
